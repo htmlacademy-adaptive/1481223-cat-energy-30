@@ -32,13 +32,14 @@
     </header>
     <main class="main-container">
       <section class="pet-programm">
-        <h1 class="pet-programm__title">Подбор программы</h1>
+        <h1 class="pet-programm__title title-h1">Подбор программы</h1>
         <p class="pet-programm__intro-text">
           Заполните анкету, и мы подберем
           программу питания для вашего кота
         </p>
         <form class="pet-programm__form" action="https://echo.htmlacademy.ru">
-          <div class="pet-programm__pet-data-wrapper">
+          <fieldset class="pet-programm__pet-data-wrapper">
+            <legend class="pet-programm__legend visually-hidden"><h2 class="pet-programm__title">Данные питомца</h2></legend>
             <label class="pet-programm__label">
               <span class="pet-programm__input-name">Имя:*</span>
                 <input class="pet-programm__input pet-programm__input--pet-name" type="text" name="pet-name" value="Барсик">
@@ -51,8 +52,9 @@
               <span class="pet-programm__input-name">Возраст (лет):</span>
               <input class="pet-programm__input pet-programm__input--pet-age" type="text" name="pet-age" value="7">
             </label>
-          </div>
-          <div class="pet-programm__programm-type-wrapper">
+          </fieldset>
+          <fieldset class="pet-programm__programm-type-wrapper">
+            <legend class="pet-programm__legend visually-hidden"><h2 class="pet-programm__title">Тип программы</h2></legend>
             <label class="pet-programm__label">
               <input class="visually-hidden" type="radio" name="programm-type" value="slim"><span class="pet-programm__markup"></span><span class="pet-programm__markup-text">Похудение</span>
             </label>
@@ -62,9 +64,9 @@
             <label class="pet-programm__label">
               <input class="visually-hidden" type="radio" name="programm-type" value="dont know"><span class="pet-programm__markup"></span><span class="pet-programm__markup-text">Не знаю (Нужен ваш совет)</span>
             </label>
-          </div>
-          <div class="pet-programm__pet-owner-wrapper">
-            <h2 class="pet-programm__title">Контактные данные (владельца кота)</h2>
+          </fieldset>
+          <fieldset class="pet-programm__pet-owner-wrapper">
+            <legend class="pet-programm__legend"><h2 class="pet-programm__title">Контактные данные (владельца кота)</h2></legend>
             <label class="pet-programm__label">
               <span class="pet-programm__input-name">E-mail:*</span>
               <input class="pet-programm__input pet-programm__input--email" type="email" name="email" value="kuklachev@gmail.com">
@@ -73,13 +75,13 @@
               <span class="pet-programm__input-name">Телефон:*</span>
               <input class="pet-programm__input pet-programm__input--phone" type="text" name="phone" value="8 (960) 900-60-90">
             </label>
-          </div>
-          <div class="pet-programm__comment-wrapper">
-            <h2 class="pet-programm__title">Комментарий</h2>
+          </fieldset>
+          <fieldset class="pet-programm__comment-wrapper">
+            <legend class="pet-programm__legend"><h2 class="pet-programm__title">Комментарий</h2></legend>
             <textarea class="pet-programm__comment-text" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </div>
-          <div class="pet-programm__optional-wrapper">
-            <h2 class="pet-programm__title">Дополнительно</h2>
+          </fieldset>
+          <fieldset class="pet-programm__optional-wrapper">
+            <legend class="pet-programm__legend"><h2 class="pet-programm__title">Дополнительно</h2></legend>
             <label class="pet-programm__label">
               <input class="visually-hidden" type="checkbox" name="sweetener" value="Y"><span class="pet-programm__markup"></span><span class="pet-programm__markup-text">Сахарозаменитель</span>
             </label>
@@ -92,7 +94,7 @@
             <label class="pet-programm__label">
               <input class="visually-hidden" type="checkbox" name="vitamins" value="Y"><span class="pet-programm__markup"></span><span class="pet-programm__markup-text">Витамины</span>
             </label>
-          </div>
+          </fieldset>
           <button class="pet-programm__button button" type="submit">Отправить заявку</button>
           <p class="pet-programm__hint">
             * — Обязательные поля
