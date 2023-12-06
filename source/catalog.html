@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/apple.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
     <header class="page__container main-header">
       <a class="main-header__logo-wrapper" href="index.html">
-        <img class="main-header__logo" src="images/logo-small.svg" alt="Логотип." width="33" height="38">
+        <picture>
+          <source media="(min-width: 1440px)" type="image/svg+xml" width="70" height="58" srcset="images/logo-large.svg">
+          <source media="(min-width: 768px)" type="image/svg+xml" width="60" height="50" srcset="images/logo-medium.svg">
+          <img class="main-header__logo" src="images/logo-small.svg" alt="Логотип." width="33" height="38">
+        </picture>
         <img class="main-header__logo-title" src="images/logo-title.svg" width="101" height="18" alt="Текстовый логотип.">
       </a>
       <nav class="main-header__navigation">
@@ -253,7 +261,7 @@
             Санкт-Петербург
           </address>
         </div>
-        <img class="main-footer__map" src="images/location.png" width="320" height="362" alt="Карта.">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bcbdd1e43705df5175867bc851a8bea1567a8a1c5d960b0e6033b16215a73a1&amp;source=constructor" width="320" height="362" frameborder="0"></iframe>
       </div>
       <div class="main-footer__content-wrapper">
         <div class="main-footer__logo-title-wrapper">
