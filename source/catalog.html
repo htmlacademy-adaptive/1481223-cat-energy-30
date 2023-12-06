@@ -8,7 +8,7 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
-    <header class="main-header">
+    <header class="page__container main-header">
       <a class="main-header__logo-wrapper" href="index.html">
         <img class="main-header__logo" src="images/logo-small.svg" alt="Логотип." width="33" height="38">
         <img class="main-header__logo-title" src="images/logo-title.svg" width="101" height="18" alt="Текстовый логотип.">
@@ -30,7 +30,7 @@
         <span class="visually-hidden">Кнопка переключения меню</span>
       </button>
     </header>
-    <main class="main-container">
+    <main class="page__container main-container">
       <section class="catalog">
         <h1 class="catalog__title title-h1">Каталог продукции</h1>
         <ul class="catalog__list">
@@ -177,7 +177,7 @@
           <li class="catalog__item catalog__item--show-more">
             <p class="catalog__show-more">Показать еще 100500 товаров</p>
             <p class="catalog__show-more-slogan">На самом деле вкусов гораздо больше!</p>
-            <button class="catalog__button button button--show-more" type="button">Показать все</button>
+            <button class="catalog__button button button--secondary" type="button">Показать все</button>
           </li>
         </ul>
       </section>
@@ -232,7 +232,7 @@
           </ul>
           <section class="catalog-optional__action">
             <div class="catalog-optional__content-wrapper">
-              <h3 class="visually-hidden">Акции</h3>
+              <h3 class="catalog-optional__title visually-hidden">Акции</h3>
               <p class="catalog-optional__action-text">
                 Закажите все
                 и получите чехол для
@@ -243,7 +243,7 @@
         </div>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="page__container main-footer">
       <div class="main-footer__map-wrapper">
         <div class="main-footer__text-wrapper">
           <p class="main-footer__invite-text">Приглашаем к сотрудничеству дилеров!</p>
@@ -256,9 +256,9 @@
         <img class="main-footer__map" src="images/location.png" width="320" height="362" alt="Карта.">
       </div>
       <div class="main-footer__content-wrapper">
-        <a class="main-footer__logo-title-wrapper" href="index.html">
+        <div class="main-footer__logo-title-wrapper">
           <img class="main-footer__logo-title logo-title logo-title--size-big" src="images/logo-title.svg" width="128" height="24" alt="Текстовый логотип.">
-        </a>
+        </div>
         <div class="main-footer__socials-wrapper">
           <ul class="main-footer__socials-list">
             <li>
