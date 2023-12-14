@@ -1,3 +1,11 @@
-.work-description {
-    
+.work-description__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.work-description__item {
+  font-size: 14px;
+  line-height:18px;
+  color:#444444;
 }

@@ -1,3 +1,14 @@
 .navigation-list {
-    
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navigation-list__link{
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
 }
