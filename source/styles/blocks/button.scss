@@ -4,13 +4,13 @@
   line-height: 20px;
   font-weight: 400;
   text-decoration: none;
-  color: #ffffff;
-  background-color: #68b738;
+  color: $light-color;
+  background-color: $primary-green;
   text-transform: uppercase;
   border: none;
 }
 
 .button--secondary {
-  background-color: #f2f2f2;
+  background-color: $light-gray-color;
   color: $primary-text-color;
 }
