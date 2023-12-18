@@ -6,16 +6,16 @@
 .pet-programm__markup-text,
 .pet-programm__input,
 .pet-programm__comment-text {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   text-transform: uppercase;
-  color: #444444;
+  color: $primary-text-color;
 }
 
 .pet-programm__legend {
-  font-family: "Oswald", sans-serif;
+  font-family: $secondary-font;
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
