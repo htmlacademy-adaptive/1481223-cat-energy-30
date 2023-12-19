@@ -1,0 +1,14 @@
+.button-toggle {
+  border: none;
+  height: 24px;
+  width: 24px;
+  background-image: url("../../images/icons/stack.svg#burger");
+  background-position: center;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+}
+
+.button-toggle--close {
+  background-image: url("../../images/icons/stack.svg#cross");
+  background-size: 18px 18px;
+}

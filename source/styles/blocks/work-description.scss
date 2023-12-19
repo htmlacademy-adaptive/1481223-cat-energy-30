@@ -13,3 +13,59 @@
 .work-description__title {
   color: $secondary-text-color;
 }
+
+.work-description__item--food-icon {
+  ::before {
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $primary-green;
+    background-image: url("../../images/icons/stack.svg#leaf-icon");
+    background-size: 30px 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.work-description__item--powder-icon {
+  ::before {
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $primary-green;
+    background-image: url("../../images/icons/stack.svg#powder-icon");
+    background-size: 26px 29px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.work-description__item--replace-food-icon {
+  ::before {
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $primary-green;
+    background-image: url("../../images/icons/stack.svg#eat-icon");
+    background-size: 25px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.work-description__item--pet-changes-icon {
+  ::before {
+    content: " ";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: $primary-green;
+    background-image: url("../../images/icons/stack.svg#pet-changes-icon");
+    background-size: 26px 31px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

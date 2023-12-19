@@ -33,3 +33,36 @@
   color: $primary-text-color;
   pointer-events: none;
 }
+
+.main-footer__social-link--vk-icon {
+  display: block;
+  background-color: $social-icon-color;
+  mask-image: url("../../images/icons/stack.svg#vkontakte");
+  mask-repeat: no-repeat;
+  mask-size: 28px 22px;
+  mask-position: center;
+  width: 28px;
+  height: 22px;
+}
+
+.main-footer__social-link--youtube-icon {
+  display: block;
+  background-color: $social-icon-color;
+  mask-image: url("../../images/icons/stack.svg#youtube");
+  mask-repeat: no-repeat;
+  mask-size: 28px 22px;
+  mask-position: center;
+  width: 28px;
+  height: 22px;
+}
+
+.main-footer__social-link--telegram-icon {
+  display: block;
+  background-color: $social-icon-color;
+  mask-image: url("../../images/icons/stack.svg#telegram");
+  mask-repeat: no-repeat;
+  mask-size: 28px 22px;
+  mask-position: center;
+  width: 28px;
+  height: 22px;
+}
