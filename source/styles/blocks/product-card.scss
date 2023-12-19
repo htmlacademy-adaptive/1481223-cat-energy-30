@@ -25,6 +25,15 @@
   text-decoration: none;
   color: $secondary-text-color;
   text-transform: uppercase;
+
+  &::after {
+    content: " ";
+    display: block;
+    width: 32px;
+    height: 10px;
+    background-image: url("../../images/icons/stack.svg#link-arrow");
+    background-size: 32px 10px;
+  }
 }
 
 .product-card--slim-icon {
@@ -48,16 +57,5 @@
     background-image: url("../../images/icons/stack.svg#cat-pro-icon");
     background-size: 67px 28px;
     background-repeat: no-repeat;
-  }
-}
-
-.product-card__link {
-  &::after {
-    content: " ";
-    display: block;
-    width: 32px;
-    height: 10px;
-    background-image: url("../../images/icons/stack.svg#link-arrow");
-    background-size: 32px 10px;
   }
 }
