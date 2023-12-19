@@ -1,0 +1,18 @@
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__show-more {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $light-black-color;
+}
+
+.catalog__show-more-slogan {
+  font-size: 12px;
+  line-height: 16px;
+  color: $primary-text-color;
+}

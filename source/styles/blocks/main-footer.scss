@@ -1,0 +1,35 @@
+.main-footer__invite-text {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $light-black-color;
+}
+
+.main-footer__address {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $primary-text-color;
+}
+
+.main-footer__socials-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.main-footer__logo-wrapper {
+  text-decoration: none;
+}
+
+.main-footer__logo-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: $primary-text-color;
+  pointer-events: none;
+}

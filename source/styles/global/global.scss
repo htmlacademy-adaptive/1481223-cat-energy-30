@@ -1,1 +1,6 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+body {
+  font-family: $primary-font;
+  padding: 0;
+  margin: 0;
+}

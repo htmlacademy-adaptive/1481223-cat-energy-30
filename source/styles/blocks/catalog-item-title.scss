@@ -1,0 +1,11 @@
+.catalog-item-title {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog-item-title__link {
+  text-decoration: none;
+  color: $catalog-title-color;
+}
