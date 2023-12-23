@@ -17,17 +17,19 @@
 
 .pet-programm__label {
   display: flex;
-  height: 40px;
   width: 280px;
   align-items: center;
 }
 
 .pet-programm__input {
   height: 40px;
+}
+
+.pet-programm__input-wrapper {
   margin-left: auto;
 }
 
-.pet-programm__label--email {
+.pet-programm__input-wrapper--email {
   position: relative;
 
   .pet-programm__input {
@@ -50,7 +52,7 @@
   }
 }
 
-.pet-programm__label--phone {
+.pet-programm__input-wrapper--phone {
   position: relative;
 
   .pet-programm__input {
@@ -72,22 +74,6 @@
     background-color: $catalog-title-color;
   }
 }
-
-/*.pet-programm__input--email {
-  width: 217px;
-  background-image: url("../../images/icons/stack.svg#email-icon");
-  background-repeat: no-repeat;
-  background-size: 17px 13px;
-  background-position: center right 13px;
-}
-
-.pet-programm__input--phone {
-  width: 200px;
-  background-image: url("../../images/icons/stack.svg#phone-icon");
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  background-position: center right 13px;
-}*/
 
 .pet-programm__legend {
   font-family: $secondary-font;

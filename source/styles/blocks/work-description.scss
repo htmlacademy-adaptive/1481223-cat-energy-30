@@ -15,7 +15,7 @@
 }
 
 .work-description__item--food-icon {
-  ::before {
+  &::before {
     content: " ";
     display: block;
     width: 60px;
@@ -29,7 +29,7 @@
 }
 
 .work-description__item--powder-icon {
-  ::before {
+  &::before {
     content: " ";
     display: block;
     width: 60px;
@@ -43,7 +43,7 @@
 }
 
 .work-description__item--replace-food-icon {
-  ::before {
+  &::before {
     content: " ";
     display: block;
     width: 60px;
@@ -57,7 +57,7 @@
 }
 
 .work-description__item--pet-changes-icon {
-  ::before {
+  &::before {
     content: " ";
     display: block;
     width: 60px;

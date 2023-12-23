@@ -25,6 +25,18 @@
 .main-footer__logo-wrapper {
   text-decoration: none;
   color: $social-icon-color;
+
+  &::after {
+    content: " ";
+    display: block;
+    mask-image: url("../../images/icons/stack.svg#academy_logo");
+    mask-repeat: no-repeat;
+    mask-size: 27px 34px;
+    mask-position: center;
+    background-color: $social-icon-color;
+    width: 27px;
+    height: 34px;
+  }
 }
 
 .main-footer__logo-text {
