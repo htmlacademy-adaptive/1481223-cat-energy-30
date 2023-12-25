@@ -2,8 +2,38 @@
   color: $light-color;
 }
 
+.hero__container {
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 20px;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 302px;
+    background-image: url("../../images/hero-cat@1x.jpg");
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 302px;
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+}
+
 .hero__title {
   text-align: center;
+  z-index: 2;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 25px;
 }
 
 .hero__slogan {
@@ -12,4 +42,20 @@
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
+  z-index: 2;
+  position: relative;
+  margin-left: 40px;
+  margin-right: 42px;
+  margin-top: 0;
+  margin-bottom: 29px;
+}
+
+.hero__image {
+  z-index: 3;
+  position: relative;
+}
+
+.hero__button {
+  width: 260px;
+  text-align: center;
 }

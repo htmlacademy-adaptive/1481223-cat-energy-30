@@ -1,8 +1,19 @@
+.live-example {
+  background-color: $live-example-background;
+}
+
+.live-example__container {
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
 .live-example__text {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: $primary-text-color;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .live-example__cost {
@@ -17,4 +28,6 @@
 
 .live-example__title {
   color: $secondary-text-color;
+  margin-top: 0;
+  margin-bottom: 40px;
 }

@@ -1,10 +1,21 @@
+.work-description__container {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
 .work-description__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .work-description__item {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 14px;
   line-height: 18px;
   color: $primary-text-color;
@@ -12,6 +23,8 @@
 
 .work-description__title {
   color: $secondary-text-color;
+  margin-top: 0;
+  margin-bottom: 40px;
 }
 
 .work-description__item--food-icon {
@@ -68,4 +81,11 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+}
+
+.work-description__text {
+  width: 200px;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
 }

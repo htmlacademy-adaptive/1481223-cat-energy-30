@@ -2,6 +2,8 @@
   background: #f2f2f2;
   padding-top: 30px;
   padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .product-card__title {
@@ -20,9 +22,15 @@
   line-height: 18px;
   font-weight: 400;
   color: $primary-text-color;
+  margin-top: 29px;
+  margin-bottom: 15px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #D9D9D9;
 }
 
 .product-card__link {
+  display: flex;
+  flex-wrap: nowrap;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -37,6 +45,14 @@
     height: 10px;
     background-image: url("../../images/icons/stack.svg#link-arrow");
     background-size: 32px 10px;
+    background-position: -8px 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin-left: 15px;
+  }
+
+  &:hover::after {
+    background-position: 0 0;
   }
 }
 
@@ -44,8 +60,8 @@
   position: relative;
 
   .product-card__title {
-    margin-left: 90px;
-    margin-right: 80px;
+    margin-left: 70px;
+    margin-right: 60px;
   }
 
   &::before {
@@ -79,8 +95,8 @@
   position: relative;
 
   .product-card__title {
-    margin-left: 91px;
-    margin-right: 52px;
+    margin-left: 71px;
+    margin-right: 32px;
   }
 
   &::before {

@@ -13,7 +13,7 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="container">
+      <div class="main-header__container container">
         <a class="main-header__logo-wrapper" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" type="image/svg+xml" width="70" height="58" srcset="images/logo-large.svg">
@@ -46,7 +46,7 @@
     </header>
     <main class="main-container">
       <section class="hero">
-        <div class="container">
+        <div class="hero__container container">
           <h1 class="hero__title title title--h1">Функциональное питание для котов</h1>
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
           <picture>
@@ -83,30 +83,30 @@
         </div>
       </section>
       <section class="work-description">
-        <div class="container">
+        <div class="work-description__container container">
           <h2 class="work-description__title title title--h2">Как это работает</h2>
           <ul class="work-description__list">
             <li class="work-description__item work-description__item--food-icon">
-              <p>Функциональное питание
+              <p class="work-description__text">Функциональное питание
               содержит только полезные
               питательные вещества.</p>
             </li>
             <li class="work-description__item work-description__item--powder-icon">
-              <p>
+              <p class="work-description__text">
                 Выпускается в виде порошка,
                 который нужно лишь залить
                 кипятком и готово.
               </p>
             </li>
             <li class="work-description__item work-description__item--replace-food-icon">
-              <p>
+              <p class="work-description__text">
                 Замените один-два приема
                 обычной еды на наше
                 функциональное питание.
               </p>
             </li>
             <li class="work-description__item work-description__item--pet-changes-icon">
-              <p>
+              <p class="work-description__text">
                 Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
               </p>
             </li>
@@ -114,18 +114,22 @@
         </div>
       </section>
       <section class="live-example">
-        <div class="container">
+        <div class="live-example__container container">
           <h2 class="live-example__title title title--h2">Живой пример</h2>
           <p class="live-example__text">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
           <dl class="live-example__stats-list stats-list">
             <div class="stats-list__stats-item">
-              <dt class="stats-list__caption">5 КГ</dt>
+              <div class="stats-list__caption_wrapper">
+                <dt class="stats-list__caption">5 КГ</dt>
+              </div>
               <dd class="stats-list__description">снижение веса</dd>
             </div>
             <div class="stats-list__stats-item">
-              <dt class="stats-list__caption">60 ДНЕЙ</dt>
+              <div class="stats-list__caption_wrapper">
+                <dt class="stats-list__caption">60 ДНЕЙ</dt>
+              </div>
               <dd class="stats-list__description">затрачено времени</dd>
             </div>
           </dl>
