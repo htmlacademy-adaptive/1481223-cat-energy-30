@@ -24,6 +24,19 @@
 
 .main-footer__logo-wrapper {
   text-decoration: none;
+  color: $social-icon-color;
+
+  &::after {
+    content: " ";
+    display: block;
+    mask-image: url("../../images/icons/stack.svg#academy_logo");
+    mask-repeat: no-repeat;
+    mask-size: 27px 34px;
+    mask-position: center;
+    background-color: $social-icon-color;
+    width: 27px;
+    height: 34px;
+  }
 }
 
 .main-footer__logo-text {
@@ -32,4 +45,37 @@
   line-height: 20px;
   color: $primary-text-color;
   pointer-events: none;
+}
+
+.main-footer__social-link--vk-icon {
+  display: block;
+  background-color: $social-icon-color;
+  mask-image: url("../../images/icons/stack.svg#vkontakte");
+  mask-repeat: no-repeat;
+  mask-size: 28px 22px;
+  mask-position: center;
+  width: 28px;
+  height: 22px;
+}
+
+.main-footer__social-link--youtube-icon {
+  display: block;
+  background-color: $social-icon-color;
+  mask-image: url("../../images/icons/stack.svg#youtube");
+  mask-repeat: no-repeat;
+  mask-size: 28px 22px;
+  mask-position: center;
+  width: 28px;
+  height: 22px;
+}
+
+.main-footer__social-link--telegram-icon {
+  display: block;
+  background-color: $social-icon-color;
+  mask-image: url("../../images/icons/stack.svg#telegram");
+  mask-repeat: no-repeat;
+  mask-size: 28px 22px;
+  mask-position: center;
+  width: 28px;
+  height: 22px;
 }
