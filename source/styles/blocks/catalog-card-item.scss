@@ -1,3 +1,39 @@
+.catalog-card-item {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-areas: "image text" "button button";
+}
+
+.catalog-card-item__image-wrapper {
+  grid-area: image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog-card-item__description {
+  grid-area: text;
+}
+
+.catalog-card-item__button {
+  grid-area: button;
+  margin-top: 17px;
+  text-align: center;
+}
+
+.catalog-card-item__title {
+  margin-top: 0;
+  margin-bottom: 14px;
+  width: 76px;
+}
+
+.catalog-card-item__data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+
 .catalog-card-item__data-name,
 .catalog-card-item__data-value {
   font-size: 12px;

@@ -1,6 +1,25 @@
+.catalog-optional-card-item__title {
+  margin-top: 0;
+  margin-bottom: 13px;
+}
+
+.catalog-optional-card-item__data {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 13px;
+  margin-bottom: 15px;
+}
+
 .catalog-optional-card-item__data-name,
 .catalog-optional-card-item__data-value {
   font-size: 14px;
   line-height: 14px;
   color: $primary-text-color;
+}
+
+.catalog-optional-card-item__button {
+  width: 280px;
+  text-align: center;
+  box-sizing: border-box;
 }
