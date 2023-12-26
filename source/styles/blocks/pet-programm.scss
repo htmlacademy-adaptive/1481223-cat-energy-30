@@ -1,5 +1,48 @@
+.pet-programm {
+  border-top: 1px solid $footer-border-gray;
+}
+
+.pet-programm__container {
+  padding-top: 27px;
+}
+
+.pet-programm__pet-data-container,
+.pet-programm__programm-type-container {
+  border-bottom: 1px solid $footer-border-gray;
+}
+
+.pet-programm__programm-type-container {
+  padding-top: 22px;
+  padding-bottom: 19px;
+}
+
+.pet-programm__pet-owner-container {
+  padding-top: 26px;
+}
+
+.pet-programm__optional__container {
+  padding-top: 23px;
+}
+
 .pet-programm__title {
   color: $secondary-text-color;
+  margin-top: 0;
+  margin-bottom: 37px;
+}
+
+.pet-programm__intro-text {
+  margin-top: 37px;
+  margin-bottom: 39px;
+}
+
+.pet-programm__pet-data-wrapper,
+.pet-programm__programm-type-wrapper,
+.pet-programm__pet-owner-wrapper,
+.pet-programm__comment-wrapper,
+.pet-programm__optional-wrapper {
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 .pet-programm__input-name,
@@ -15,6 +58,18 @@
   padding: 0;
 }
 
+.pet-programm__comment-text {
+  width: 280px;
+  min-height: 150px;
+  resize: none;
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-left: 15px;
+  padding-right: 14px;
+  padding-bottom: 14px;
+  border: 1px solid $input-border-gray;
+}
+
 .pet-programm__label {
   display: flex;
   width: 280px;
@@ -22,11 +77,32 @@
 }
 
 .pet-programm__input {
-  height: 40px;
+  height: 45px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  border: 1px solid $input-border-gray;
 }
 
 .pet-programm__input-wrapper {
   margin-left: auto;
+}
+
+.pet-programm__input-wrapper--pet-name {
+  .pet-programm__input {
+    width: 228px;
+  }
+}
+
+.pet-programm__input-wrapper--pet-weight {
+  .pet-programm__input {
+    width: 207px;
+  }
+}
+
+.pet-programm__input-wrapper--pet-age {
+  .pet-programm__input {
+    width: 173px;
+  }
 }
 
 .pet-programm__input-wrapper--email {
@@ -34,8 +110,6 @@
 
   .pet-programm__input {
     width: 217px;
-    padding-left: 15px;
-    box-sizing: border-box;
   }
 
   &::after {
@@ -57,8 +131,6 @@
 
   .pet-programm__input {
     width: 200px;
-    padding-left: 15px;
-    box-sizing: border-box;
   }
 
   &::after {
@@ -83,9 +155,90 @@
   color: $secondary-text-color;
 }
 
+.pet-programm__pet-data-wrapper .pet-programm__label {
+  margin-bottom: 14px;
+}
+
+.pet-programm__pet-data-wrapper .pet-programm__label:last-child {
+  margin-bottom: 24px;
+}
+
+.pet-programm__programm-type-wrapper .pet-programm__label {
+  margin-bottom: 13px;
+}
+
+.pet-programm__programm-type-wrapper .pet-programm__label:last-child {
+  margin-bottom: 0;
+}
+
+.pet-programm__pet-owner-wrapper .pet-programm__label {
+  margin-bottom: 14px;
+}
+
+.pet-programm__pet-owner-wrapper .pet-programm__label:last-child {
+  margin-bottom: 24px;
+}
+
+.pet-programm__optional-wrapper .pet-programm__label {
+  margin-bottom: 13px;
+}
+
+.pet-programm__optional-wrapper .pet-programm__label:last-child {
+  margin-bottom: 34px;
+}
+
+.pet-programm__pet-owner-wrapper .pet-programm__legend {
+  margin-bottom: 35px;
+}
+
+.pet-programm__comment-wrapper .pet-programm__legend {
+  margin-bottom: 38px;
+}
+
+.pet-programm__optional-wrapper .pet-programm__legend {
+  margin-bottom: 34px;
+}
+
 .pet-programm__hint {
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   color: $secondary-text-color;
+}
+
+.custom-toogle[type="radio"] ~ .pet-programm__markup {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special-grey;
+  border-radius: 50%;
+}
+
+.custom-toogle[type="radio"]:checked ~ .pet-programm__markup {
+  background-image: url("../../images/icons/stack.svg#radiobutton-active");
+  background-size: 13px 13px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.custom-toogle[type="checkbox"] ~ .pet-programm__markup {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special-grey;
+}
+
+.custom-toogle[type="checkbox"]:checked ~ .pet-programm__markup {
+  background-image: url("../../images/icons/stack.svg#checked-icon");
+  background-size: 18px 14px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.pet-programm__markup-text {
+  margin-left: 15px;
+}
+
+.pet-programm__button {
+  width: 280px;
 }
