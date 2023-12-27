@@ -6,24 +6,6 @@
   padding-top: 27px;
 }
 
-.pet-programm__pet-data-container,
-.pet-programm__programm-type-container {
-  border-bottom: 1px solid $footer-border-gray;
-}
-
-.pet-programm__programm-type-container {
-  padding-top: 22px;
-  padding-bottom: 19px;
-}
-
-.pet-programm__pet-owner-container {
-  padding-top: 26px;
-}
-
-.pet-programm__optional__container {
-  padding-top: 23px;
-}
-
 .pet-programm__title {
   color: $secondary-text-color;
   margin-top: 0;
@@ -43,6 +25,31 @@
   padding: 0;
   margin: 0;
   border: none;
+}
+
+/*.pet-programm__pet-data-wrapper,
+.pet-programm__programm-type-wrapper {
+  border-bottom: 1px solid $footer-border-gray;
+}*/
+
+.pet-programm__pet-data-wrapper,
+.pet-programm__programm-type-wrapper {
+  position: relative;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    bottom: 0;
+    height: 1px;
+    background-color: $footer-border-gray;
+  }
+}
+
+.pet-programm__programm-type-wrapper {
+  padding-top: 22px;
+  padding-bottom: 19px;
 }
 
 .pet-programm__input-name,
@@ -154,6 +161,7 @@
   font-weight: 400;
   line-height: 26px;
   color: $secondary-text-color;
+  width: 100%;
 }
 
 .pet-programm__pet-data-wrapper .pet-programm__label {
@@ -189,15 +197,56 @@
 }
 
 .pet-programm__pet-owner-wrapper .pet-programm__legend {
+  position: relative;
+  margin-top: 26px;
   margin-bottom: 35px;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    max-width: 93px;
+    right: -20px;
+    height: 2px;
+    background-color: $primary-green;
+    transform: translateY(-50%);
+  }
 }
 
 .pet-programm__comment-wrapper .pet-programm__legend {
+  position: relative;
   margin-bottom: 38px;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    max-width: 159px;
+    right: -20px;
+    height: 2px;
+    background-color: $primary-green;
+    transform: translateY(-50%);
+  }
 }
 
 .pet-programm__optional-wrapper .pet-programm__legend {
+  position: relative;
+  margin-top: 23px;
   margin-bottom: 34px;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    max-width: 139px;
+    right: -20px;
+    height: 2px;
+    background-color: $primary-green;
+    transform: translateY(-50%);
+  }
 }
 
 .pet-programm__hint {
