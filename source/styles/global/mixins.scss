@@ -7,3 +7,9 @@
     src: $font-src;
   }
 }
+
+@mixin media-tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}

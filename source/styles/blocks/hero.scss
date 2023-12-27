@@ -1,11 +1,20 @@
 .hero {
   color: $light-color;
+
+  @include media-tablet {
+    color: $secondary-text-color;
+  }
 }
 
 .hero__container {
   position: relative;
   padding-top: 27px;
   padding-bottom: 20px;
+
+  @include media-tablet {
+    padding-top: 65px;
+    padding-bottom: 0;
+  }
 
   &::before {
     content: " ";
@@ -15,6 +24,10 @@
     width: 320px;
     height: 302px;
     background-image: url("../../images/hero-cat@1x.jpg");
+
+    @include media-tablet {
+      display: none;
+    }
   }
 
   &::after {
@@ -25,6 +38,10 @@
     width: 320px;
     height: 302px;
     background-color: rgba(104, 183, 56, 0.85);
+
+    @include media-tablet {
+      display: none;
+    }
   }
 }
 
@@ -34,6 +51,12 @@
   position: relative;
   margin-top: 0;
   margin-bottom: 25px;
+
+  @include media-tablet {
+    margin-left: 90px;
+    margin-right: 202px;
+    text-align: left;
+  }
 }
 
 .hero__slogan {
@@ -48,6 +71,19 @@
   margin-right: 42px;
   margin-top: 0;
   margin-bottom: 29px;
+
+  @include media-tablet {
+    margin-left: 90px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 21px;
+  }
+}
+
+.hero__image-wrapper {
+  @include media-tablet {
+    position: relative;
+  }
 }
 
 .hero__image {
@@ -58,4 +94,12 @@
 .hero__button {
   width: 260px;
   text-align: center;
+
+  @include media-tablet {
+    position: absolute;
+    top: 29px;
+    left: 90px;
+    width: 244px;
+    z-index: 3;
+  }
 }

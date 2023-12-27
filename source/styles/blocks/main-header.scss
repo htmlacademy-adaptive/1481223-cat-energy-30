@@ -1,6 +1,11 @@
 .main-header {
   padding-top: 13px;
   padding-bottom: 14px;
+
+  @include media-tablet {
+    padding-top: 25px;
+    padding-bottom: 0;
+  }
 }
 
 .main-header__container {
@@ -18,8 +23,17 @@
 
 .main-header__logo-title {
   margin-left: 56px;
+
+  @include media-tablet {
+    margin-left: 13px;
+  }
 }
 
 .main-header__navigation {
   display: none;
+
+  @include media-tablet {
+    display: block;
+    margin-left: 94px;
+  }
 }

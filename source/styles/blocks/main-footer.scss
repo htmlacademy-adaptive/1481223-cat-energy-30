@@ -12,6 +12,11 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $light-black-color;
+
+  @include media-tablet {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .main-footer__address {
@@ -23,15 +28,28 @@
   font-size: 14px;
   line-height: 20px;
   color: $primary-text-color;
+
+  @include media-tablet {
+    width: 157px;
+    font-size: 16px;
+    text-align: right;
+  }
 }
 
 .main-footer__socials-wrapper {
-  height: 62px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid $footer-border-gray;
+
+  @include media-tablet {
+    border-bottom: none;
+    padding: 0;
+    margin-left: 160px;
+  }
 }
 
 .main-footer__socials-list {
@@ -63,6 +81,17 @@
     background-color: $social-icon-color;
     width: 27px;
     height: 34px;
+
+    @include media-tablet {
+      height: 37px;
+      margin-left: 23px;
+    }
+  }
+
+  @include media-tablet {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 120px;
   }
 }
 
@@ -111,6 +140,10 @@
 .main-footer__map-wrapper {
   width: 320px;
   margin: 0 auto;
+
+  @include media-tablet {
+    width: 768px;
+  }
 }
 
 .main-footer__text-container {
@@ -118,10 +151,20 @@
   flex-wrap: wrap;
   width: 280px;
   margin: 0 auto;
+
+  @include media-tablet {
+    width: 628px;
+    justify-content: space-between;
+  }
 }
 
 .main-footer__text-wrapper {
   padding: 26px 0;
+  background-color: $light-color;
+
+  @include media-tablet {
+    padding: 60px 0;
+  }
 }
 
 .main-footer__logo-title-wrapper {
@@ -130,8 +173,32 @@
   padding-bottom: 20px;
   text-align: center;
   border-bottom: 1px solid $footer-border-gray;
+
+  @include media-tablet {
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  @include media-tablet {
+    border-bottom: none;
+  }
 }
 
 .main-footer__iframe {
   border: none;
+
+  @include media-tablet {
+    width: 768px;
+  }
+}
+
+.main-footer__content-wrapper {
+  @include media-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 37px;
+    padding: 55px 0;
+  }
 }

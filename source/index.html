@@ -49,16 +49,18 @@
         <div class="hero__container container">
           <h1 class="hero__title title title--h1">Функциональное питание для котов</h1>
           <p class="hero__slogan">Занялся собой? Займись котом!</p>
-          <picture>
-            <source media="(min-width: 1440px)" type="image/webp" srcset="images/hero-product-large@1x.webp 1x, images/hero-product-large@2x.webp 2x" width="552" height="499">
-            <source media="(min-width: 1440px)" type="image/png" srcset="images/hero-product-large@1x.png 1x, images/hero-product-large@2x.png 2x" width="552" height="499">
-            <source media="(min-width: 768px)" type="image/webp" srcset="images/hero-product-medium@1x.webp 1x, images/hero-product-medium@2x.webp 2x" width="709" height="609">
-            <source media="(min-width: 768px)" type="image/png" srcset="images/hero-product-medium@1x.png 1x, images/hero-product-medium@2x.png 2x" width="709" height="609">
-            <source type="image/webp" srcset="images/hero-product-small@1x.webp 1x, images/hero-product-small@2x.webp 2x" width="280" height="270">
-            <img class="hero__image" src="images/hero-product-small@1x.png" srcset="images/hero-product-small@1x.png 1x,
-            images/hero-product-small@2x.png 2x" width="280" height="270" alt="Cat energy продукт">
-          </picture>
-          <a class="hero__button button" href="form.html">Подобрать программу</a>
+          <div class="hero__image-wrapper">
+            <picture>
+              <source media="(min-width: 1440px)" type="image/webp" srcset="images/hero-product-large@1x.webp 1x, images/hero-product-large@2x.webp 2x" width="552" height="499">
+              <source media="(min-width: 1440px)" type="image/png" srcset="images/hero-product-large@1x.png 1x, images/hero-product-large@2x.png 2x" width="552" height="499">
+              <source media="(min-width: 768px)" type="image/webp" srcset="images/hero-product-medium@1x.webp 1x, images/hero-product-medium@2x.webp 2x" width="709" height="609">
+              <source media="(min-width: 768px)" type="image/png" srcset="images/hero-product-medium@1x.png 1x, images/hero-product-medium@2x.png 2x" width="709" height="609">
+              <source type="image/webp" srcset="images/hero-product-small@1x.webp 1x, images/hero-product-small@2x.webp 2x" width="280" height="270">
+              <img class="hero__image" src="images/hero-product-small@1x.png" srcset="images/hero-product-small@1x.png 1x,
+              images/hero-product-small@2x.png 2x" width="280" height="270" alt="Cat energy продукт">
+            </picture>
+            <a class="hero__button button" href="form.html">Подобрать программу</a>
+          </div>
         </div>
       </section>
       <section class="catalog-advantages">
@@ -119,34 +121,39 @@
           <p class="live-example__text">
             Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
           </p>
-          <dl class="live-example__stats-list stats-list">
-            <div class="stats-list__stats-item">
-              <div class="stats-list__caption_wrapper">
-                <dt class="stats-list__caption">5 КГ</dt>
+          <div class="live-example__stats-wrapper">
+            <dl class="live-example__stats-list stats-list">
+              <div class="stats-list__stats-item">
+                <div class="stats-list__caption-wrapper">
+                  <dt class="stats-list__caption">5 КГ</dt>
+                </div>
+                <dd class="stats-list__description">снижение веса</dd>
               </div>
-              <dd class="stats-list__description">снижение веса</dd>
-            </div>
-            <div class="stats-list__stats-item">
-              <div class="stats-list__caption_wrapper">
-                <dt class="stats-list__caption">60 ДНЕЙ</dt>
+              <div class="stats-list__stats-item">
+                <div class="stats-list__caption-wrapper">
+                  <dt class="stats-list__caption">60 ДНЕЙ</dt>
+                </div>
+                <dd class="stats-list__description">затрачено времени</dd>
               </div>
-              <dd class="stats-list__description">затрачено времени</dd>
-            </div>
-          </dl>
-          <p class="live-example__cost"><span>Затраты на питание:</span> <span>15 000 РУБ.</span></p>
+            </dl>
+            <p class="live-example__cost"><span>Затраты на питание:</span> <span>15 000 РУБ.</span></p>
+          </div>
           <div class="live-example__image-compare">
-            <picture>
-              <source media="(min-width: 768px)" type="image/webp" srcset="images/cat-fat-medium@1x.webp 1x, images/cat-fat-medium@2x.webp 2x" width="560" height="512">
-              <source media="(min-width: 768px)" type="image/png" srcset="images/cat-fat-medium@1x.png 1x, images/cat-fat-medium@2x.png 2x" width="560" height="512">
-              <source type="image/webp" srcset="images/cat-fat-small@1x.webp 1x, images/cat-fat-small@2x.webp 2x" width="280" height="256">
-              <img src="images/cat-fat-small@1x.png" srcset="images/cat-fat-small@1x.png 1x,
-              images/cat-fat-small@2x.png 2x" width="280" height="256" alt="Большой кот.">
-            </picture>
+            <div class="live-example__image-left-wrapper">
+              <picture>
+                <source media="(min-width: 768px)" type="image/webp" srcset="images/cat-fat-medium@1x.webp 1x, images/cat-fat-medium@2x.webp 2x" width="560" height="512">
+                <source media="(min-width: 768px)" type="image/png" srcset="images/cat-fat-medium@1x.png 1x, images/cat-fat-medium@2x.png 2x" width="560" height="512">
+                <source type="image/webp" srcset="images/cat-fat-small@1x.webp 1x, images/cat-fat-small@2x.webp 2x" width="280" height="256">
+                <img src="images/cat-fat-small@1x.png" srcset="images/cat-fat-small@1x.png 1x,
+                images/cat-fat-small@2x.png 2x" width="280" height="256" alt="Большой кот.">
+              </picture>
+            </div>
+            <div class="live-example__image-compare-divider"></div>
             <picture>
               <source media="(min-width: 768px)" type="image/webp" srcset="images/cat-slim-medium@1x.webp 1x, images/cat-slim-medium@2x.webp 2x" width="560" height="512">
               <source media="(min-width: 768px)" type="image/png" srcset="images/cat-slim-medium@1x.png 1x, images/cat-slim-medium@2x.png 2x" width="560" height="512">
               <source type="image/webp" srcset="images/cat-slim-small@1x.webp 1x, images/cat-slim-small@2x.webp 2x" width="280" height="256">
-              <img src="images/cat-slim-small@1x.png" srcset="images/cat-slim-small@1x.png 1x,
+              <img class="live-example__second-compare-image" src="images/cat-slim-small@1x.png" srcset="images/cat-slim-small@1x.png 1x,
               images/cat-slim-small@2x.png 2x" width="280" height="256" alt="Худой кот.">
             </picture>
           </div>

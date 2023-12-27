@@ -2,6 +2,12 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @include media-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 33px;
+  }
 }
 
 .navigation-list__link {
@@ -12,4 +18,16 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $secondary-text-color;
+
+  @include media-tablet {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.navigation-list__link--is-active {
+  text-decoration: underline;
+  text-decoration-color: $primary-green;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 10px;
 }

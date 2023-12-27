@@ -6,4 +6,8 @@
   flex-wrap: wrap;
   flex-direction: column;
   gap: 20px;
+
+  @include media-tablet {
+    gap: 30px;
+  }
 }

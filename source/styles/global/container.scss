@@ -2,4 +2,9 @@
   margin: 0 auto;
   width: 280px;
   padding: 0 20px;
+
+  @include media-tablet {
+    width: 708px;
+    padding: 0 30px;
+  }
 }

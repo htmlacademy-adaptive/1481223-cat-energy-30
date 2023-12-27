@@ -8,6 +8,10 @@
   background-size: 24px 24px;
   background-repeat: no-repeat;
   background-color: transparent;
+
+  @include media-tablet {
+    display: none;
+  }
 }
 
 .button-toggle--close {

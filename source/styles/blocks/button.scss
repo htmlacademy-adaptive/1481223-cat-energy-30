@@ -10,6 +10,11 @@
   background-color: $primary-green;
   text-transform: uppercase;
   border: none;
+
+  @include media-tablet {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .button--secondary {

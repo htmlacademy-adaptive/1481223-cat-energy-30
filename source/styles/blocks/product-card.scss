@@ -1,9 +1,16 @@
 .product-card {
   background: #f2f2f2;
   padding-top: 30px;
-  padding-bottom: 16px;
+  padding-bottom: 18px;
   padding-left: 20px;
   padding-right: 20px;
+
+  @include media-tablet {
+    padding-top: 77px;
+    padding-bottom: 53px;
+    padding-left: 52px;
+    padding-right: 316px;
+  }
 }
 
 .product-card__title {
@@ -15,6 +22,11 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
+
+  @include media-tablet {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .product-card__description {
@@ -25,18 +37,33 @@
   margin-top: 29px;
   margin-bottom: 15px;
   padding-bottom: 23px;
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid $footer-border-gray;
+
+  @include media-tablet {
+    margin-top: 24px;
+    padding-bottom: 0;
+    margin-bottom: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+  }
 }
 
 .product-card__link {
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
   text-decoration: none;
   color: $secondary-text-color;
   text-transform: uppercase;
+
+  @include media-tablet {
+    font-size: 20px;
+    line-height: 29px;
+  }
 
   &::after {
     content: " ";
@@ -49,6 +76,10 @@
     background-repeat: no-repeat;
     overflow: hidden;
     margin-left: 15px;
+
+    @include media-tablet {
+      margin-left: 25px;
+    }
   }
 
   &:hover::after {
@@ -62,6 +93,10 @@
   .product-card__title {
     margin-left: 70px;
     margin-right: 60px;
+
+    @include media-tablet {
+      margin-left: 1px;
+    }
   }
 
   &::before {
@@ -76,6 +111,15 @@
     background-size: 36px 50px;
     background-repeat: no-repeat;
     z-index: 2;
+
+    @include media-tablet {
+      top: 81px;
+      left: auto;
+      right: 93px;
+      width: 140px;
+      height: 194px;
+      background-size: 140px 194px;
+    }
   }
 
   &::after {
@@ -88,6 +132,14 @@
     height: 50px;
     background-color: $primary-green;
     border-radius: 50%;
+
+    @include media-tablet {
+      top: 92px;
+      left: auto;
+      right: 63px;
+      width: 200px;
+      height: 200px;
+    }
   }
 }
 
@@ -97,6 +149,10 @@
   .product-card__title {
     margin-left: 71px;
     margin-right: 32px;
+
+    @include media-tablet {
+      margin-left: 1px;
+    }
   }
 
   &::before {
@@ -111,6 +167,15 @@
     background-size: 67px 28px;
     background-repeat: no-repeat;
     z-index: 2;
+
+    @include media-tablet {
+      top: 135px;
+      left: auto;
+      right: 29px;
+      width: 268px;
+      height: 112px;
+      background-size: 268px 112px;
+    }
   }
 
   &::after {
@@ -123,5 +188,13 @@
     height: 50px;
     background-color: $primary-green;
     border-radius: 50%;
+
+    @include media-tablet {
+      top: 91px;
+      left: auto;
+      right: 63px;
+      width: 200px;
+      height: 200px;
+    }
   }
 }

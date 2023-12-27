@@ -11,6 +11,10 @@
   width: 124px;
   height: 70px;
   text-align: center;
+
+  @include media-tablet {
+    width: 162px;
+  }
 }
 
 .stats-list__caption {
@@ -21,11 +25,17 @@
   text-align: center;
   text-transform: uppercase;
   color: $secondary-text-color;
+
+  @include media-tablet {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .stats-list__description {
   position: relative;
   bottom: 9px;
+  padding: 0 12px;
   width: 77px;
   font-weight: 400;
   font-size: 12px;
@@ -33,9 +43,16 @@
   margin: 0 auto;
   color: $primary-text-color;
   background-color: $live-example-background;
+
+  @include media-tablet {
+    background-color: $light-color;
+    font-size: 14px;
+    line-height: 14px;
+    width: 96px;
+  }
 }
 
-.stats-list__caption_wrapper {
+.stats-list__caption-wrapper {
   padding-top: 14px;
   padding-bottom: 18px;
   border: 1px solid $special-grey;
