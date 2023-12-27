@@ -4,13 +4,23 @@
 
 .catalog .catalog__container {
   padding-top: 27px;
-  border-bottom: 1px solid $special-grey2;
+  padding-bottom: 25px;
 }
 
 .catalog__item {
+  position: relative;
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid $special-grey2;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    right: -20px;
+    height: 1px;
+    background-color: $special-grey2;
+  }
 }
 
 .catalog__item--show-more {
@@ -18,8 +28,20 @@
 }
 
 .catalog__title {
+  position: relative;
   margin-top: 0;
-  margin-bottom: 41px;
+  margin-bottom: 0;
+  padding-bottom: 41px;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    right: -20px;
+    height: 1px;
+    background-color: $special-grey2;
+  }
 }
 
 .catalog__list {
