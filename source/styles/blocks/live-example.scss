@@ -7,12 +7,23 @@
 }
 
 .live-example__container {
+  position: relative;
   padding-top: 25px;
   padding-bottom: 40px;
 
   @include media-tablet {
     padding-top: 45px;
     padding-bottom: 101px;
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 768px;
+    height: 462px;
+    background-color: $live-example-background;
   }
 }
 
@@ -79,6 +90,8 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
+  clip-path: inset(10px, 10px, 10px, 10px);
 }
 
 .live-example__image-left-wrapper {
@@ -86,11 +99,11 @@
   z-index: 2;
   overflow: hidden;
   width: 50%;
-  background-color: $live-example-background;
+  //background-color: $live-example-background;
 
-  @include media-tablet {
+  /*@include media-tablet {
     background-color: $light-color;
-  }
+  }*/
 }
 
 .live-example__image-compare-divider {
@@ -102,4 +115,8 @@
   background-image: url("../../images/drag-divider.svg");
   background-repeat: no-repeat;
   z-index: 3;
+
+  @include media-tablet {
+    height: 512px;
+  }
 }
