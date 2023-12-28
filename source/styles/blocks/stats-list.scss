@@ -50,6 +50,10 @@
     line-height: 14px;
     width: 96px;
   }
+
+  @include media-desctop {
+    background-color: $live-example-background;
+  }
 }
 
 .stats-list__caption-wrapper {

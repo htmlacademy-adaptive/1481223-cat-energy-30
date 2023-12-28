@@ -1,5 +1,7 @@
 .main-footer {
   background-color: $light-gray-color;
+  max-width: $desctop-width;
+  margin: 0 auto;
 }
 
 .main-footer__invite-text {
@@ -48,7 +50,8 @@
   @include media-tablet {
     border-bottom: none;
     padding: 0;
-    margin-left: 160px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -91,7 +94,6 @@
   @include media-tablet {
     padding-top: 0;
     padding-bottom: 0;
-    margin-left: 120px;
   }
 }
 
@@ -142,7 +144,12 @@
   margin: 0 auto;
 
   @include media-tablet {
-    width: 768px;
+    width: $tablet-width;
+  }
+
+  @include media-desctop {
+    width: $desctop-width;
+    position: relative;
   }
 }
 
@@ -156,6 +163,10 @@
     width: 628px;
     justify-content: space-between;
   }
+
+  @include media-desctop {
+    width: 407px;
+  }
 }
 
 .main-footer__text-wrapper {
@@ -164,6 +175,14 @@
 
   @include media-tablet {
     padding: 60px 0;
+  }
+
+  @include media-desctop {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    padding-left: 80px;
+    padding-right: 78px;
   }
 }
 
@@ -189,7 +208,12 @@
   border: none;
 
   @include media-tablet {
-    width: 768px;
+    width: $tablet-width;
+    height: 400px;
+  }
+
+  @include media-desctop {
+    width: $desctop-width;
   }
 }
 
@@ -200,5 +224,9 @@
     align-items: center;
     min-height: 37px;
     padding: 55px 0;
+  }
+
+  @include media-desctop {
+    padding: 66px 0;
   }
 }

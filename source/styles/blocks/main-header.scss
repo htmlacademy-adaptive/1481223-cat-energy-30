@@ -39,11 +39,10 @@
 
   @include media-tablet {
     display: block;
-    margin-left: 94px;
+    margin-left: auto;
   }
 
   @include media-desctop {
-    margin-left: 543px;
     z-index: 2;
   }
 }
