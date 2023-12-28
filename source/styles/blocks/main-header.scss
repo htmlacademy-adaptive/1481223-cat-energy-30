@@ -1,4 +1,7 @@
-.main-header {
+.main-header__container {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
   padding-top: 13px;
   padding-bottom: 14px;
 
@@ -6,12 +9,10 @@
     padding-top: 25px;
     padding-bottom: 0;
   }
-}
 
-.main-header__container {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
+  @include media-desctop {
+    padding-top: 55px;
+  }
 }
 
 .main-header__logo-wrapper {
@@ -27,6 +28,10 @@
   @include media-tablet {
     margin-left: 13px;
   }
+
+  @include media-desctop {
+    margin-left: 14px;
+  }
 }
 
 .main-header__navigation {
@@ -35,5 +40,10 @@
   @include media-tablet {
     display: block;
     margin-left: 94px;
+  }
+
+  @include media-desctop {
+    margin-left: 543px;
+    z-index: 2;
   }
 }

@@ -10,4 +10,15 @@
   @include media-tablet {
     gap: 30px;
   }
+
+  @include media-desctop {
+    gap: 80px;
+    flex-direction: row;
+  }
+}
+
+.catalog-advantages__item {
+  @include media-desctop {
+    width: 570px;
+  }
 }

@@ -13,3 +13,9 @@
     @content;
   }
 }
+
+@mixin media-desctop {
+  @media (min-width: $desctop-width) {
+    @content;
+  }
+}

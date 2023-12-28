@@ -8,6 +8,10 @@
     flex-wrap: wrap;
     gap: 33px;
   }
+
+  @include media-desctop {
+    gap: 31px;
+  }
 }
 
 .navigation-list__link {
@@ -23,6 +27,12 @@
     font-size: 18px;
     line-height: 24px;
   }
+
+  @include media-desctop {
+    font-size: 20px;
+    line-height: 29px;
+    color: $light-color;
+  }
 }
 
 .navigation-list__link--is-active {
@@ -30,4 +40,8 @@
   text-decoration-color: $primary-green;
   text-decoration-thickness: 2px;
   text-underline-offset: 10px;
+
+  @include media-desctop {
+    text-decoration-color: $light-color;
+  }
 }

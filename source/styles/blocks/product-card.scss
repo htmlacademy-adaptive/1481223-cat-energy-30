@@ -11,6 +11,11 @@
     padding-left: 52px;
     padding-right: 316px;
   }
+
+  @include media-desctop {
+    padding-right: 61px;
+    padding-bottom: 55px;
+  }
 }
 
 .product-card__title {
@@ -46,6 +51,11 @@
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
+  }
+
+  @include media-desctop {
+    margin-top: 73px;
+    margin-bottom: 23px;
   }
 }
 
@@ -97,6 +107,10 @@
     @include media-tablet {
       margin-left: 1px;
     }
+
+    @include media-desctop {
+      margin-left: 162px;
+    }
   }
 
   &::before {
@@ -120,6 +134,15 @@
       height: 194px;
       background-size: 140px 194px;
     }
+
+    @include media-desctop {
+      top: 43px;
+      left: 67px;
+      right: auto;
+      width: 70px;
+      height: 97px;
+      background-size: 70px 97px;
+    }
   }
 
   &::after {
@@ -140,6 +163,14 @@
       width: 200px;
       height: 200px;
     }
+
+    @include media-desctop {
+      width: 100px;
+      height: 100px;
+      top: 47px;
+      left: 52px;
+      right: auto;
+    }
   }
 }
 
@@ -152,6 +183,10 @@
 
     @include media-tablet {
       margin-left: 1px;
+    }
+
+    @include media-desctop {
+      margin-left: 162px;
     }
   }
 
@@ -176,6 +211,15 @@
       height: 112px;
       background-size: 268px 112px;
     }
+
+    @include media-desctop {
+      top: 67px;
+      left: 33px;
+      right: auto;
+      width: 134px;
+      height: 56px;
+      background-size: 134px 56px;
+    }
   }
 
   &::after {
@@ -195,6 +239,14 @@
       right: 63px;
       width: 200px;
       height: 200px;
+    }
+
+    @include media-desctop {
+      top: 47px;
+      left: 52px;
+      right: auto;
+      width: 100px;
+      height: 100px;
     }
   }
 }

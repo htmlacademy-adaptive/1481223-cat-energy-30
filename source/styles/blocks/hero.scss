@@ -16,6 +16,13 @@
     padding-bottom: 0;
   }
 
+  @include media-desctop {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 29px;
+    padding-bottom: 134px;
+  }
+
   &::before {
     content: " ";
     position: absolute;
@@ -24,9 +31,20 @@
     width: 320px;
     height: 302px;
     background-image: url("../../images/hero-cat@1x.jpg");
+    background-repeat: no-repeat;
 
     @include media-tablet {
       display: none;
+    }
+
+    @include media-desctop {
+      top: -116px;
+      right: 0;
+      left: auto;
+      display: block;
+      width: 720px;
+      height: 694px;
+      background-image: url("../../images/hero-cat-big@1x.jpg");
     }
   }
 
@@ -37,10 +55,19 @@
     left: 0;
     width: 320px;
     height: 302px;
-    background-color: rgba(104, 183, 56, 0.85);
+    background-color: $primary-green-transparent;
 
     @include media-tablet {
       display: none;
+    }
+
+    @include media-desctop {
+      display: block;
+      width: 720px;
+      height: 694px;
+      left: auto;
+      top: -116px;
+      right: 0;
     }
   }
 }
@@ -53,9 +80,18 @@
   margin-bottom: 25px;
 
   @include media-tablet {
+    margin-bottom: 40px;
     margin-left: 90px;
     margin-right: 202px;
     text-align: left;
+  }
+
+  @include media-desctop {
+    margin-top: 90px;
+    margin-bottom: 40px;
+    margin-right: 0;
+    margin-left: 80px;
+    width: 416px;
   }
 }
 
@@ -78,17 +114,20 @@
     line-height: 20px;
     margin-bottom: 21px;
   }
-}
 
-.hero__image-wrapper {
-  @include media-tablet {
-    position: relative;
+  @include media-desctop {
+    margin-left: 80px;
+    width: 283px;
   }
 }
 
 .hero__image {
   z-index: 3;
   position: relative;
+
+  @include media-desctop {
+    right: 47px;
+  }
 }
 
 .hero__button {
@@ -97,9 +136,15 @@
 
   @include media-tablet {
     position: absolute;
-    top: 29px;
-    left: 90px;
+    top: 295px;
+    margin-left: 90px;
     width: 244px;
     z-index: 3;
+  }
+
+  @include media-desctop {
+    top: auto;
+    bottom: 266px;
+    margin-left: 80px;
   }
 }
