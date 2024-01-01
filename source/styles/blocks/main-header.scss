@@ -1,3 +1,31 @@
+.main-header {
+  &::after {
+    @include media-desctop {
+      content: " ";
+      position: absolute;
+      display: block;
+      height: 694px;
+      left: 50%;
+      right: 0;
+      top: 0;
+      background-color: $primary-green-transparent;
+    }
+  }
+
+  &::before {
+    @include media-desctop {
+      content: " ";
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 50%;
+      height: 694px;
+      background-image: url("../../images/hero-cat-big@1x.jpg");
+      background-repeat: no-repeat;
+    }
+  }
+}
+
 .main-header__container {
   display: flex;
   align-items: center;

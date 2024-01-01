@@ -1,27 +1,15 @@
 .hero {
+  position: relative;
   color: $light-color;
 
   @include media-tablet {
     color: $secondary-text-color;
   }
 
-  &::before {
-    @include media-desctop {
-      content: " ";
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 50%;
-      height: 694px;
-      background-image: url("../../images/hero-cat-big@1x.jpg");
-      background-repeat: no-repeat;
-    }
-  }
-
   &::after {
     content: " ";
     position: absolute;
-    top: 69px;
+    top: 0;
     left: 0;
     right: 0;
     height: 302px;
@@ -29,14 +17,6 @@
 
     @include media-tablet {
       display: none;
-    }
-
-    @include media-desctop {
-      display: block;
-      height: 694px;
-      left: 50%;
-      right: 0;
-      top: 0;
     }
   }
 }
