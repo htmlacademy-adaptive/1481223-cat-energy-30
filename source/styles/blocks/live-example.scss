@@ -142,23 +142,19 @@
   }
 }
 
-.live-example__second-compare-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-}
-
 .live-example__image-left-wrapper {
   position: relative;
   z-index: 2;
   overflow: hidden;
   width: 50%;
-  //background-color: $live-example-background;
+}
 
-  /*@include media-tablet {
-    background-color: $light-color;
-  }*/
+.live-example__image-right-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  clip-path: polygon(50% 0, 100% 0%, 100% 100%, 50% 100%);
 }
 
 .live-example__image-compare-divider {
