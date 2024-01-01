@@ -42,20 +42,22 @@
 }
 
 .hero__container {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding-top: 27px;
   padding-bottom: 20px;
 
   @include media-tablet {
+    display: block;
     padding-top: 65px;
     padding-bottom: 0;
   }
 
   @include media-desctop {
-    display: flex;
-    flex-wrap: wrap;
     padding-top: 29px;
-    padding-bottom: 134px;
+    min-height: 549px;
+    padding-bottom: 82px;
   }
 
   &::before {
@@ -71,16 +73,6 @@
     @include media-tablet {
       display: none;
     }
-
-    /*@include media-desctop {
-      top: -116px;
-      right: 0;
-      left: auto;
-      display: block;
-      width: 720px;
-      height: 694px;
-      background-image: url("../../images/hero-cat-big@1x.jpg");
-    }*/
   }
 }
 
@@ -124,39 +116,46 @@
     margin-left: 90px;
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 21px;
+    margin-bottom: 50px;
   }
 
   @include media-desctop {
     margin-left: 80px;
+    margin-bottom: 52px;
     width: 283px;
   }
 }
 
-.hero__image {
-  z-index: 3;
+.hero__image-wrapper {
   position: relative;
+  z-index: 1;
+
+  @include media-tablet {
+    margin-top: -83px;
+  }
 
   @include media-desctop {
-    right: 47px;
+    margin-top: -370px;
+    margin-left: 447px;
   }
 }
 
 .hero__button {
+  position: relative;
   width: 260px;
   text-align: center;
+  margin-top: 3px;
+  order: 1;
+  z-index: 2;
 
   @include media-tablet {
-    position: absolute;
-    top: 295px;
     margin-left: 90px;
+    margin-top: 0;
     width: 244px;
-    z-index: 3;
+    order: 0;
   }
 
   @include media-desctop {
-    top: auto;
-    bottom: 266px;
     margin-left: 80px;
   }
 }
