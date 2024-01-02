@@ -1,21 +1,48 @@
 .pet-programm {
   border-top: 1px solid $footer-border-gray;
+
+  @include media-tablet {
+    border-top: none;
+  }
 }
 
 .pet-programm__container {
   padding-top: 27px;
   overflow: hidden;
+
+  @include media-tablet {
+    padding-top: 65px;
+  }
 }
 
 .pet-programm__title {
   color: $secondary-text-color;
   margin-top: 0;
   margin-bottom: 37px;
+
+  @include media-tablet {
+    margin-bottom: 54px;
+    margin-left: 40px;
+  }
 }
 
 .pet-programm__intro-text {
   margin-top: 37px;
   margin-bottom: 39px;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  max-width: 210px;
+
+  @include media-tablet {
+    margin-top: 54px;
+    margin-bottom: 66px;
+    margin-left: 40px;
+    max-width: 323px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .pet-programm__pet-data-wrapper,
@@ -40,12 +67,22 @@
     bottom: 0;
     height: 1px;
     background-color: $footer-border-gray;
+
+    @include media-tablet {
+      display: none;
+    }
   }
 }
 
 .pet-programm__programm-type-wrapper {
   padding-top: 22px;
   padding-bottom: 19px;
+
+  @include media-tablet {
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 1px solid $footer-border-gray;
+  }
 }
 
 .pet-programm__input-name,
@@ -59,6 +96,11 @@
   text-transform: uppercase;
   color: $primary-text-color;
   padding: 0;
+
+  @include media-tablet {
+    font-size: 20px;
+    line-height: 29px;
+  }
 }
 
 .pet-programm__comment-text {
@@ -71,12 +113,25 @@
   padding-right: 14px;
   padding-bottom: 14px;
   border: 1px solid $input-border-gray;
+
+  @include media-tablet {
+    margin-left: 40px;
+    padding-left: 20px;
+    width: 628px;
+    min-height: 175px;
+  }
 }
 
 .pet-programm__label {
   display: flex;
   width: 280px;
   align-items: center;
+
+  @include media-tablet {
+    width: 628px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
 
 .pet-programm__input {
@@ -84,6 +139,11 @@
   padding-left: 15px;
   box-sizing: border-box;
   border: 1px solid $input-border-gray;
+
+  @include media-tablet {
+    padding-left: 20px;
+    height: 52px;
+  }
 }
 
 .pet-programm__input-wrapper {
@@ -93,18 +153,30 @@
 .pet-programm__input-wrapper--pet-name {
   .pet-programm__input {
     width: 228px;
+
+    @include media-tablet {
+      width: 568px;
+    }
   }
 }
 
 .pet-programm__input-wrapper--pet-weight {
   .pet-programm__input {
     width: 207px;
+
+    @include media-tablet {
+      width: 540px;
+    }
   }
 }
 
 .pet-programm__input-wrapper--pet-age {
   .pet-programm__input {
     width: 173px;
+
+    @include media-tablet {
+      width: 498px;
+    }
   }
 }
 
@@ -113,6 +185,10 @@
 
   .pet-programm__input {
     width: 217px;
+
+    @include media-tablet {
+      width: 552px;
+    }
   }
 
   &::after {
@@ -126,6 +202,10 @@
     mask-size: 17px 13px;
     mask-repeat: no-repeat;
     background-color: $catalog-title-color;
+
+    @include media-tablet {
+      top: 20px;
+    }
   }
 }
 
@@ -134,6 +214,10 @@
 
   .pet-programm__input {
     width: 200px;
+
+    @include media-tablet {
+      width: 530px;
+    }
   }
 
   &::after {
@@ -147,6 +231,10 @@
     mask-size: 17px 13px;
     mask-repeat: no-repeat;
     background-color: $catalog-title-color;
+
+    @include media-tablet {
+      top: 20px;
+    }
   }
 }
 
@@ -159,26 +247,34 @@
   line-height: 26px;
   color: $secondary-text-color;
 
-  /*&::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 100vw;
-    right: calc(100% + var(--padding-offset) / 2);
-    height: 3px;
-    background: $primary-green;
-    transform: translateY(-50%);
-  }*/
+  @include media-tablet {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 100vw;
+      right: calc(100% + var(--padding-offset) / 2 + 30px);
+      height: 3px;
+      background: $primary-green;
+      transform: translateY(-50%);
+    }
+  }
 
   &::after {
     content: "";
     position: absolute;
     top: 50%;
     width: 100vw;
-    left: calc(100% + var(--padding-offset) / 2);
+    left: calc(100% + var(--padding-offset) / 2 + 30px);
     height: 3px;
     background: $primary-green;
     transform: translateY(-50%);
+  }
+
+  @include media-tablet {
+    margin-left: 40px;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
@@ -188,10 +284,20 @@
 
 .pet-programm__pet-data-wrapper .pet-programm__label:last-child {
   margin-bottom: 24px;
+
+  @include media-tablet {
+    margin-bottom: 72px;
+  }
 }
 
 .pet-programm__programm-type-wrapper .pet-programm__label {
   margin-bottom: 13px;
+
+  @include media-tablet {
+    width: 601px;
+    margin-left: 27px;
+    margin-right: 0;
+  }
 }
 
 .pet-programm__programm-type-wrapper .pet-programm__label:last-child {
@@ -208,10 +314,19 @@
 
 .pet-programm__optional-wrapper .pet-programm__label {
   margin-bottom: 13px;
+
+  @include media-tablet {
+    margin-bottom: 0;
+    width: 221px;
+  }
 }
 
 .pet-programm__optional-wrapper .pet-programm__label:last-child {
   margin-bottom: 34px;
+
+  @include media-tablet {
+    margin-bottom: 0;
+  }
 }
 
 .pet-programm__pet-owner-wrapper .pet-programm__legend {
@@ -227,6 +342,15 @@
   &::after {
     top: 25%;
     transform: translateY(-25%);
+
+    @include media-tablet {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  @include media-tablet {
+    max-width: unset;
   }
 }
 
@@ -241,10 +365,19 @@
 }
 
 .pet-programm__hint {
+  margin-top: 21px;
+  margin-bottom: 32px;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   color: $secondary-text-color;
+
+  @include media-tablet {
+    margin-left: 60px;
+    margin-top: 17px;
+    margin-bottom: 21px;
+    font-size: 16px;
+  }
 }
 
 .custom-toogle[type="radio"] ~ .pet-programm__markup {
@@ -253,6 +386,11 @@
   height: 30px;
   border: 1px solid $special-grey;
   border-radius: 50%;
+
+  @include media-tablet {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .custom-toogle[type="radio"]:checked ~ .pet-programm__markup {
@@ -260,6 +398,10 @@
   background-size: 13px 13px;
   background-repeat: no-repeat;
   background-position: center center;
+
+  @include media-tablet {
+    background-size: 18px 18px;
+  }
 }
 
 .custom-toogle[type="checkbox"] ~ .pet-programm__markup {
@@ -267,6 +409,11 @@
   width: 30px;
   height: 30px;
   border: 1px solid $special-grey;
+
+  @include media-tablet {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .custom-toogle[type="checkbox"]:checked ~ .pet-programm__markup {
@@ -274,6 +421,10 @@
   background-size: 18px 14px;
   background-repeat: no-repeat;
   background-position: center center;
+
+  @include media-tablet {
+    background-size: 26px 26px;
+  }
 }
 
 .pet-programm__markup-text {
@@ -282,4 +433,26 @@
 
 .pet-programm__button {
   width: 280px;
+
+  @include media-tablet {
+    width: 284px;
+  }
+}
+
+.pet-programm__optional-grid {
+  @include media-tablet {
+    display: grid;
+    grid-template-columns: 221px 221px;
+    gap: 32px 123px;
+  }
+}
+
+.pet-programm__submit-wrapper {
+  @include media-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 52px;
+    margin-bottom: 60px;
+    padding-left: 40px;
+  }
 }

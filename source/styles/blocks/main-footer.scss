@@ -171,7 +171,7 @@
 
 .main-footer__text-wrapper {
   padding: 26px 0;
-  background-color: $light-color;
+  background-color: $light-gray-color;
 
   @include media-tablet {
     padding: 60px 0;
@@ -183,7 +183,12 @@
     left: 110px;
     padding-left: 80px;
     padding-right: 78px;
+    background-color: $light-color;
   }
+}
+
+.main-footer__text-wrapper--main {
+  background-color: $light-color;
 }
 
 .main-footer__logo-title-wrapper {
