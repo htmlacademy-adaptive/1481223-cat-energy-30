@@ -31,6 +31,11 @@
   @include media-desctop {
     font-size: 20px;
     line-height: 29px;
+  }
+}
+
+.navigation-list--main-page .navigation-list__link {
+  @include media-desctop {
     color: $light-color;
   }
 }
@@ -40,7 +45,9 @@
   text-decoration-color: $primary-green;
   text-decoration-thickness: 2px;
   text-underline-offset: 10px;
+}
 
+.navigation-list--main-page .navigation-list__link--is-active {
   @include media-desctop {
     text-decoration-color: $light-color;
   }
