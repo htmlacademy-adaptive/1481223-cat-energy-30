@@ -142,6 +142,11 @@
     width: 628px;
     min-height: 175px;
   }
+
+  @include media-desctop {
+    margin-left: 0;
+    width: 1220px;
+  }
 }
 
 .pet-programm__label {
@@ -492,6 +497,10 @@
     margin-bottom: 21px;
     font-size: 16px;
   }
+
+  @include media-desctop {
+    margin-left: 80px;
+  }
 }
 
 .custom-toogle[type="radio"] ~ .pet-programm__markup {
@@ -551,6 +560,10 @@
   @include media-tablet {
     width: 284px;
   }
+
+  @include media-desctop {
+    width: 570px;
+  }
 }
 
 .pet-programm__optional-grid {
@@ -558,6 +571,11 @@
     display: grid;
     grid-template-columns: 221px 221px;
     gap: 32px 123px;
+  }
+
+  @include media-desctop {
+    grid-template-columns: 221px 221px 221px 221px;
+    gap: 32px 104px;
   }
 }
 
@@ -568,6 +586,12 @@
     margin-top: 52px;
     margin-bottom: 60px;
     padding-left: 40px;
+  }
+
+  @include media-desctop {
+    margin-top: 60px;
+    margin-bottom: 79px;
+    padding-left: 0;
   }
 }
 
