@@ -53,51 +53,55 @@
             программу питания для вашего кота
           </p>
           <form class="pet-programm__form" action="https://echo.htmlacademy.ru">
-            <fieldset class="pet-programm__pet-data-wrapper">
-              <legend class="pet-programm__legend visually-hidden">Данные питомца</legend>
-              <div class="pet-programm__label">
-                <label class="pet-programm__input-name" for="pet-name">Имя:*</label>
-                <div class="pet-programm__input-wrapper pet-programm__input-wrapper--pet-name">
-                  <input class="pet-programm__input" id="pet-name" type="text" name="pet-name" value="Барсик">
+            <div class="pet-programm__fieldsets-wrapper">
+              <fieldset class="pet-programm__pet-data-wrapper">
+                <legend class="pet-programm__legend visually-hidden">Данные питомца</legend>
+                <div class="pet-programm__label">
+                  <label class="pet-programm__input-name" for="pet-name">Имя:*</label>
+                  <div class="pet-programm__input-wrapper pet-programm__input-wrapper--pet-name">
+                    <input class="pet-programm__input" id="pet-name" type="text" name="pet-name" value="Барсик">
+                  </div>
                 </div>
-              </div>
-              <div class="pet-programm__label">
-                <label class="pet-programm__input-name" for="pet-weight">Вес (кг):*</label>
-                <div class="pet-programm__input-wrapper pet-programm__input-wrapper--pet-weight">
-                  <input class="pet-programm__input" id="pet-weight" type="text" name="pet-weight" value="7">
+                <div class="pet-programm__label">
+                  <label class="pet-programm__input-name" for="pet-weight">Вес (кг):*</label>
+                  <div class="pet-programm__input-wrapper pet-programm__input-wrapper--pet-weight">
+                    <input class="pet-programm__input" id="pet-weight" type="text" name="pet-weight" value="7">
+                  </div>
                 </div>
-              </div>
-              <div class="pet-programm__label">
-                <label class="pet-programm__input-name" for="pet-age">Возраст (лет):</label>
-                <div class="pet-programm__input-wrapper pet-programm__input-wrapper--pet-age">
-                  <input class="pet-programm__input" id="pet-age" type="text" name="pet-age" value="7">
+                <div class="pet-programm__label">
+                  <label class="pet-programm__input-name" for="pet-age">Возраст (лет):</label>
+                  <div class="pet-programm__input-wrapper pet-programm__input-wrapper--pet-age">
+                    <input class="pet-programm__input" id="pet-age" type="text" name="pet-age" value="7">
+                  </div>
                 </div>
-              </div>
-            </fieldset>
-            <fieldset class="pet-programm__programm-type-wrapper">
-              <legend class="pet-programm__legend visually-hidden">Тип программы</legend>
-              <label class="pet-programm__label">
-                <input class="custom-toogle visually-hidden" type="radio" name="programm-type" value="slim"><span class="pet-programm__markup"></span><span class="pet-programm__markup-text">Похудение</span>
-              </label>
-              <label class="pet-programm__label">
-                <input class="custom-toogle visually-hidden" type="radio" name="programm-type" value="fat"><span class="pet-programm__markup"></span><span class="pet-programm__markup-text">Набор массы</span>
-              </label>
-              <label class="pet-programm__label">
-                <input class="custom-toogle visually-hidden" type="radio" name="programm-type" value="dont know"><span class="pet-programm__markup"></span><span class="pet-programm__markup-text">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </fieldset>
+              </fieldset>
+              <fieldset class="pet-programm__programm-type-wrapper">
+                <legend class="pet-programm__legend visually-hidden">Тип программы</legend>
+                <label class="pet-programm__label">
+                  <input class="custom-toogle visually-hidden" type="radio" name="programm-type" value="slim"><span class="pet-programm__markup"></span><span class="pet-programm__markup-text">Похудение</span>
+                </label>
+                <label class="pet-programm__label">
+                  <input class="custom-toogle visually-hidden" type="radio" name="programm-type" value="fat"><span class="pet-programm__markup"></span><span class="pet-programm__markup-text">Набор массы</span>
+                </label>
+                <label class="pet-programm__label">
+                  <input class="custom-toogle visually-hidden" type="radio" name="programm-type" value="dont know"><span class="pet-programm__markup"></span><span class="pet-programm__markup-text">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </fieldset>
+            </div>
             <fieldset class="pet-programm__pet-owner-wrapper">
               <legend class="pet-programm__legend">Контактные данные (владельца кота)</legend>
-              <div class="pet-programm__label">
-                <label class="pet-programm__input-name" for="email">E-mail:*</label>
-                <div class="pet-programm__input-wrapper pet-programm__input-wrapper--email">
-                  <input class="pet-programm__input" id="email" type="email" name="email" value="kuklachev@gmail.com">
+              <div class="pet-programm__owner-inputs-wrapper">
+                <div class="pet-programm__label pet-programm__label--desctop-email">
+                  <label class="pet-programm__input-name" for="email">E-mail:*</label>
+                  <div class="pet-programm__input-wrapper pet-programm__input-wrapper--email">
+                    <input class="pet-programm__input" id="email" type="email" name="email" value="kuklachev@gmail.com">
+                  </div>
                 </div>
-              </div>
-              <div class="pet-programm__label">
-                <label class="pet-programm__input-name" for="phone">Телефон:*</label>
-                <div class="pet-programm__input-wrapper pet-programm__input-wrapper--phone">
-                  <input class="pet-programm__input" id="phone" type="tel" name="phone" value="8 (960) 900-60-90">
+                <div class="pet-programm__label pet-programm__label--desctop-phone">
+                  <label class="pet-programm__input-name" for="phone">Телефон:*</label>
+                  <div class="pet-programm__input-wrapper pet-programm__input-wrapper--phone">
+                    <input class="pet-programm__input" id="phone" type="tel" name="phone" value="8 (960) 900-60-90">
+                  </div>
                 </div>
               </div>
             </fieldset>

@@ -13,6 +13,10 @@
   @include media-tablet {
     padding-top: 65px;
   }
+
+  @include media-desctop {
+    padding-top: 74px;
+  }
 }
 
 .pet-programm__title {
@@ -23,6 +27,11 @@
   @include media-tablet {
     margin-bottom: 54px;
     margin-left: 40px;
+  }
+
+  @include media-desctop {
+    margin-left: 0;
+    margin-bottom: 55px;
   }
 }
 
@@ -42,6 +51,10 @@
     max-width: 323px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @include media-desctop {
+    margin-left: 0;
   }
 }
 
@@ -79,9 +92,18 @@
   padding-bottom: 19px;
 
   @include media-tablet {
-    margin-left: 40px;
-    margin-right: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 628px;
     border: 1px solid $footer-border-gray;
+    box-sizing: border-box;
+  }
+
+  @include media-desctop {
+    margin-left: 0;
+    margin-right: 0;
+    width: 570px;
   }
 }
 
@@ -132,6 +154,22 @@
     margin-left: 40px;
     margin-right: 40px;
   }
+
+  @include media-desctop {
+    width: 570px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@include media-desctop {
+  .pet-programm__label--desctop-email {
+    width: 569px;
+  }
+
+  .pet-programm__label--desctop-phone {
+    width: 570px;
+  }
 }
 
 .pet-programm__input {
@@ -157,6 +195,10 @@
     @include media-tablet {
       width: 568px;
     }
+
+    @include media-desctop {
+      width: 510px;
+    }
   }
 }
 
@@ -167,6 +209,10 @@
     @include media-tablet {
       width: 540px;
     }
+
+    @include media-desctop {
+      width: 482px;
+    }
   }
 }
 
@@ -176,6 +222,10 @@
 
     @include media-tablet {
       width: 498px;
+    }
+
+    @include media-desctop {
+      width: 440px;
     }
   }
 }
@@ -188,6 +238,10 @@
 
     @include media-tablet {
       width: 552px;
+    }
+
+    @include media-desctop {
+      width: 494px;
     }
   }
 
@@ -217,6 +271,10 @@
 
     @include media-tablet {
       width: 530px;
+    }
+
+    @include media-desctop {
+      width: 472px;
     }
   }
 
@@ -276,10 +334,18 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @include media-desctop {
+    margin-left: 0;
+  }
 }
 
 .pet-programm__pet-data-wrapper .pet-programm__label {
   margin-bottom: 14px;
+
+  @include media-tablet {
+    margin-bottom: 20px;
+  }
 }
 
 .pet-programm__pet-data-wrapper .pet-programm__label:last-child {
@@ -288,15 +354,24 @@
   @include media-tablet {
     margin-bottom: 72px;
   }
+
+  @include media-desctop {
+    margin-bottom: 0;
+  }
 }
 
 .pet-programm__programm-type-wrapper .pet-programm__label {
   margin-bottom: 13px;
 
   @include media-tablet {
-    width: 601px;
+    width: 599px;
     margin-left: 27px;
     margin-right: 0;
+  }
+
+  @include media-desctop {
+    width: 540px;
+    margin-left: 28px;
   }
 }
 
@@ -306,10 +381,26 @@
 
 .pet-programm__pet-owner-wrapper .pet-programm__label {
   margin-bottom: 14px;
+
+  @include media-tablet {
+    margin-bottom: 20px;
+  }
+
+  @include media-desctop {
+    margin-bottom: 0;
+  }
 }
 
 .pet-programm__pet-owner-wrapper .pet-programm__label:last-child {
   margin-bottom: 24px;
+
+  @include media-tablet {
+    margin-bottom: 65px;
+  }
+
+  @include media-desctop {
+    margin-bottom: 0;
+  }
 }
 
 .pet-programm__optional-wrapper .pet-programm__label {
@@ -350,18 +441,41 @@
   }
 
   @include media-tablet {
+    margin-top: 65px;
+    margin-bottom: 76px;
     max-width: unset;
+  }
+
+  @include media-desctop {
+    margin-top: 70px;
   }
 }
 
 .pet-programm__comment-wrapper .pet-programm__legend {
   margin-bottom: 38px;
+
+  @include media-tablet {
+    margin-bottom: 87px;
+  }
+
+  @include media-desctop {
+    margin-bottom: 78px;
+  }
 }
 
 .pet-programm__optional-wrapper .pet-programm__legend {
   position: relative;
   margin-top: 23px;
   margin-bottom: 34px;
+
+  @include media-tablet {
+    margin-top: 65px;
+    margin-bottom: 57px;
+  }
+
+  @include media-desctop {
+    margin-top: 70px;
+  }
 }
 
 .pet-programm__hint {
@@ -454,5 +568,22 @@
     margin-top: 52px;
     margin-bottom: 60px;
     padding-left: 40px;
+  }
+}
+
+.pet-programm__fieldsets-wrapper {
+  @include media-desctop {
+    display: grid;
+    grid-template-columns: 570px 570px;
+    gap: 80px;
+  }
+}
+
+.pet-programm__owner-inputs-wrapper {
+  @include media-desctop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 81px;
+    margin-bottom: 70px;
   }
 }
