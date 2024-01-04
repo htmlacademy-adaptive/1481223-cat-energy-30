@@ -4,25 +4,22 @@
   grid-template-columns: 140px 140px;
   grid-template-areas: "image text" "button button";
 
-  &::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 81px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: $light-gray-color;
-  }
-
   @include media-tablet {
     grid-template-columns: 324px;
     grid-template-areas: "image" "text" "button";
-  }
-
-  @include media-tablet {
     padding-top: 10px;
     padding-bottom: 40px;
+
+    &::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 81px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $light-gray-color;
+    }
   }
 }
 

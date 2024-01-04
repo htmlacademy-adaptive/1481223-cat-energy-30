@@ -1,6 +1,10 @@
 .catalog-optional-card-item__title {
   margin-top: 0;
   margin-bottom: 13px;
+
+  @include media-tablet {
+    margin-bottom: 0;
+  }
 }
 
 .catalog-optional-card-item__data {
@@ -9,6 +13,11 @@
   justify-content: space-between;
   margin-top: 13px;
   margin-bottom: 15px;
+
+  @include media-tablet {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .catalog-optional-card-item__data-name,
@@ -16,10 +25,40 @@
   font-size: 14px;
   line-height: 14px;
   color: $primary-text-color;
+
+  @include media-tablet {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .catalog-optional-card-item__button {
   width: 280px;
   text-align: center;
   box-sizing: border-box;
+
+  @include media-tablet {
+    width: 100%;
+  }
+}
+
+.catalog-optional-card-item__wrapper {
+  @include media-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 23px;
+  }
+}
+
+.catalog-optional-card-item__data-name {
+  @include media-tablet {
+    margin-right: 49px;
+  }
+}
+
+.catalog-optional-card-item__data-value {
+  @include media-tablet {
+    min-width: 42px;
+  }
 }

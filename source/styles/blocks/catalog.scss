@@ -43,6 +43,26 @@
 
 .catalog__item--show-more {
   text-align: center;
+
+  @include media-tablet {
+    padding-top: 132px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    &::after {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 81px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: calc(100% - 81px);
+      border: 1px solid $light-gray-color;
+      background-color: transparent;
+    }
+  }
 }
 
 .catalog__title {
@@ -89,13 +109,32 @@
   font-size: 16px;
   line-height: 20px;
   color: $light-black-color;
+
+  @include media-tablet {
+    font-size: 20px;
+    line-height: 24px;
+    width: 134px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 23px;
+    z-index: 2;
+  }
 }
 
 .catalog__show-more-slogan {
   margin-bottom: 21px;
+  margin-top: 0;
   font-size: 12px;
   line-height: 16px;
   color: $primary-text-color;
+
+  @include media-tablet {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    width: 170px;
+  }
 }
 
 .catalog__item--show-more::before {
@@ -104,9 +143,34 @@
   width: 30px;
   height: 30px;
   background-image: url("../../images/icons/stack.svg#plus");
+  background-repeat: no-repeat;
   background-size: 30px 30px;
+
+  @include media-tablet {
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    background-size: 60px 60px;
+  }
 }
 
 .catalog__button {
   width: 280px;
+
+  @include media-tablet {
+    width: 250px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.catalog__show-more-wrapper {
+  @include media-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-bottom: 40px;
+  }
 }
