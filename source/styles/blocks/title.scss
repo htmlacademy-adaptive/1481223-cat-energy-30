@@ -3,6 +3,11 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
+
+  @include media-tablet {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .title--h2 {
@@ -10,4 +15,9 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  @include media-tablet {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

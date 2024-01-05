@@ -7,3 +7,15 @@
     src: $font-src;
   }
 }
+
+@mixin media-tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-desctop {
+  @media (min-width: $desctop-width) {
+    @content;
+  }
+}

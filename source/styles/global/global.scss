@@ -1,4 +1,16 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+:root {
+  --padding-offset: 20px;
+
+  @include media-tablet {
+    --padding-offset: 30px;
+  }
+
+  @include media-desctop {
+    --padding-offset: 110px;
+  }
+}
+
 body {
   font-family: $primary-font;
   padding: 0;

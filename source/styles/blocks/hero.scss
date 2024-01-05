@@ -1,9 +1,82 @@
 .hero {
+  position: relative;
   color: $light-color;
+
+  @include media-tablet {
+    color: $secondary-text-color;
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 302px;
+    background-color: $primary-green-transparent;
+
+    @include media-tablet {
+      display: none;
+    }
+  }
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 20px;
+
+  @include media-tablet {
+    display: block;
+    padding-top: 65px;
+    padding-bottom: 0;
+  }
+
+  @include media-desctop {
+    padding-top: 29px;
+    min-height: 549px;
+    padding-bottom: 82px;
+  }
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 302px;
+    background-image: url("../../images/hero-cat@1x.jpg");
+    background-repeat: no-repeat;
+
+    @include media-tablet {
+      display: none;
+    }
+  }
 }
 
 .hero__title {
   text-align: center;
+  z-index: 2;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  @include media-tablet {
+    margin-bottom: 40px;
+    margin-left: 90px;
+    margin-right: 202px;
+    text-align: left;
+  }
+
+  @include media-desctop {
+    margin-top: 90px;
+    margin-bottom: 40px;
+    margin-right: 0;
+    margin-left: 80px;
+    width: 416px;
+  }
 }
 
 .hero__slogan {
@@ -12,4 +85,57 @@
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
+  z-index: 2;
+  position: relative;
+  margin-left: 40px;
+  margin-right: 42px;
+  margin-top: 0;
+  margin-bottom: 29px;
+
+  @include media-tablet {
+    margin-left: 90px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+
+  @include media-desctop {
+    margin-left: 80px;
+    margin-bottom: 52px;
+    width: 283px;
+  }
+}
+
+.hero__image-wrapper {
+  position: relative;
+  z-index: 1;
+
+  @include media-tablet {
+    margin-top: -83px;
+  }
+
+  @include media-desctop {
+    margin-top: -370px;
+    margin-left: 447px;
+  }
+}
+
+.hero__button {
+  position: relative;
+  width: 260px;
+  text-align: center;
+  margin-top: 3px;
+  order: 1;
+  z-index: 2;
+
+  @include media-tablet {
+    margin-left: 90px;
+    margin-top: 0;
+    width: 244px;
+    order: 0;
+  }
+
+  @include media-desctop {
+    margin-left: 80px;
+  }
 }
