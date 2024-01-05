@@ -167,6 +167,8 @@
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @include media-desctop {
@@ -181,5 +183,6 @@
     flex-direction: column;
     flex-grow: 1;
     padding-bottom: 40px;
+    z-index: 2;
   }
 }
