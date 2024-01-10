@@ -139,17 +139,8 @@
 }
 
 .main-footer__map-wrapper {
-  width: 320px;
-  margin: 0 auto;
-
-  @include media-tablet {
-    width: $tablet-width;
-  }
-
-  @include media-desctop {
-    width: 100%;
-    position: relative;
-  }
+  width: 100%;
+  position: relative;
 }
 
 .main-footer__text-container {
@@ -202,22 +193,22 @@
     padding-bottom: 0;
     border-bottom: none;
   }
-
-  @include media-tablet {
-    border-bottom: none;
-  }
 }
 
 .main-footer__iframe {
+  width: 100%;
   border: none;
+  background-image: url("../../images/map@1x.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @include media-tablet {
-    width: $tablet-width;
     height: 400px;
+    background-image: url("../../images/map-medium@1x.png");
   }
 
   @include media-desctop {
-    width: 100%;
+    background-image: url("../../images/map-large@1x.png");
   }
 }
 
