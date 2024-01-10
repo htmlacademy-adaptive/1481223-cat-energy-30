@@ -13,7 +13,10 @@
     left: 0;
     right: 0;
     height: 302px;
-    background-color: $primary-green-transparent;
+    background: linear-gradient(rgba(94, 170, 47, 0.85) 62.4%, rgba(104, 183, 56, 0.85)), url("../../images/hero-cat@1x.jpg"), linear-gradient(rgba(65, 64, 69, 1), rgba(65, 64, 69, 1));
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto 320px;
 
     @include media-tablet {
       display: none;
@@ -38,21 +41,6 @@
     padding-top: 29px;
     min-height: 549px;
     padding-bottom: 82px;
-  }
-
-  &::before {
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 320px;
-    height: 302px;
-    background-image: url("../../images/hero-cat@1x.jpg");
-    background-repeat: no-repeat;
-
-    @include media-tablet {
-      display: none;
-    }
   }
 }
 

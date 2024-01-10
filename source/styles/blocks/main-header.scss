@@ -8,19 +8,7 @@
       left: 50%;
       right: 0;
       top: 0;
-      background-color: $primary-green-transparent;
-    }
-  }
-
-  &::before {
-    @include media-desctop {
-      content: " ";
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 50%;
-      height: 694px;
-      background-image: url("../../images/hero-cat-big@1x.jpg");
+      background: linear-gradient(rgba(94, 170, 47, 0.85) 62.4%, rgba(104, 183, 56, 0.85)), url("../../images/hero-cat-big@1x.jpg"), linear-gradient(rgba(65, 64, 69, 1), rgba(65, 64, 69, 1));
       background-repeat: no-repeat;
     }
   }
