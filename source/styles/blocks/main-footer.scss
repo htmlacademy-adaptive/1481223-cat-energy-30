@@ -1,6 +1,5 @@
 .main-footer {
   background-color: $light-gray-color;
-  max-width: $desctop-width;
   margin: 0 auto;
 }
 
@@ -148,7 +147,7 @@
   }
 
   @include media-desctop {
-    width: $desctop-width;
+    width: 100%;
     position: relative;
   }
 }
@@ -180,7 +179,7 @@
   @include media-desctop {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 17%;
     padding-left: 80px;
     padding-right: 78px;
     background-color: $light-color;
@@ -218,7 +217,7 @@
   }
 
   @include media-desctop {
-    width: $desctop-width;
+    width: 100%;
   }
 }
 

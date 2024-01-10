@@ -2,7 +2,18 @@
   background-color: $live-example-background;
 
   @include media-tablet {
+    position: relative;
     background-color: $light-color;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 462px;
+      background-color: $live-example-background;
+    }
   }
 }
 
@@ -14,16 +25,6 @@
   @include media-tablet {
     padding-top: 45px;
     padding-bottom: 101px;
-
-    &::after {
-      content: " ";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: $tablet-width;
-      height: 462px;
-      background-color: $live-example-background;
-    }
   }
 
   @include media-desctop {
@@ -31,10 +32,6 @@
     flex-wrap: wrap;
     padding-top: 69px;
     padding-bottom: 0;
-
-    &::after {
-      width: $desctop-width;
-    }
   }
 }
 
