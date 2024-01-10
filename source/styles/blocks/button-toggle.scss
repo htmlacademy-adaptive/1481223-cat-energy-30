@@ -8,13 +8,20 @@
   background-size: 24px 24px;
   background-repeat: no-repeat;
   background-color: transparent;
+  cursor: pointer;
+
+  @include media-mobile {
+    &--no-js {
+      display: none;
+    }
+  }
+
+  &--close {
+    background-image: url("../../images/icons/stack.svg#cross");
+    background-size: 18px 18px;
+  }
 
   @include media-tablet {
     display: none;
   }
-}
-
-.button-toggle--close {
-  background-image: url("../../images/icons/stack.svg#cross");
-  background-size: 18px 18px;
 }
