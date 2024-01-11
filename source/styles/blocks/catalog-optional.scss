@@ -18,6 +18,20 @@
   font-size: 24px;
   line-height: 24px;
   color: $secondary-text-color;
+  box-shadow: -20px 0 0 $light-color, 20px 0 0 $light-color;
+  background-color: $light-color;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 17px;
+    right: 0;
+    width: 100vw;
+    height: 2px;
+    background-color: $primary-green;
+    box-shadow: 100vw 0 0 $primary-green;
+    z-index: -1;
+  }
 
   @include media-tablet {
     width: fit-content;
@@ -25,41 +39,7 @@
     margin-left: 40px;
     font-size: 36px;
     line-height: 36px;
-
-    &::before {
-      content: " ";
-      position: absolute;
-      top: 50%;
-      width: 100vw;
-      right: calc(100% + var(--padding-offset) / 2 + 30px);
-      height: 3px;
-      background: $primary-green;
-      transform: translateY(-50%);
-    }
-  }
-
-  /* old version
-    &::after {
-    content: " ";
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    max-width: 54px;
-    right: -20px;
-    height: 2px;
-    background-color: $primary-green;
-    transform: translateY(-50%);
-  }*/
-
-  &::after {
-    content: " ";
-    position: absolute;
-    top: 50%;
-    width: 100vw;
-    left: calc(100% + var(--padding-offset) / 2 + 30px);
-    height: 3px;
-    background: $primary-green;
-    transform: translateY(-50%);
+    box-shadow: -40px 0 0 $light-color, 40px 0 0 $light-color;
   }
 }
 
