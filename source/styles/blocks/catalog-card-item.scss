@@ -39,6 +39,10 @@
     width: 200px;
     z-index: 2;
   }
+
+  @include media-desctop {
+    width: 169px;
+  }
 }
 
 .catalog-card-item__description {

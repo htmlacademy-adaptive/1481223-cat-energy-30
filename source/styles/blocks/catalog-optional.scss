@@ -144,7 +144,13 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  background-image: url("../../images/action-cat-small@1x.jpg");
+  background-image:
+    image-set(
+      url("../../images/action-cat-small@1x.webp") type("image/webp") 1x,
+      url("../../images/action-cat-small@2x.webp") type("image/webp") 2x,
+      url("../../images/action-cat-small@1x.jpg") type("image/jpg") 1x,
+      url("../../images/action-cat-small@2x.jpg") type("image/jpg") 2x
+    );
   background-repeat: no-repeat;
   min-height: 290px;
   width: 280px;
@@ -170,13 +176,25 @@
   }
 
   @include media-tablet {
-    background-image: url("../../images/action-cat-medium@1x.jpg");
+    background-image:
+      image-set(
+        url("../../images/action-cat-medium@1x.webp") type("image/webp") 1x,
+        url("../../images/action-cat-medium@2x.webp") type("image/webp") 2x,
+        url("../../images/action-cat-medium@1x.webp") type("image/jpg") 1x,
+        url("../../images/action-cat-medium@2x.webp") type("image/jpg") 2x
+      );
     width: 707px;
     min-height: 200px;
   }
 
   @include media-desctop {
-    background-image: url("../../images/action-cat-big@1x.jpg");
+    background-image:
+      image-set(
+        url("../../images/action-cat-big@1x.webp") type("image/webp") 1x,
+        url("../../images/action-cat-big@2x.webp") type("image/webp") 2x,
+        url("../../images/action-cat-big@1x.jpg") type("image/jpg") 1x,
+        url("../../images/action-cat-big@2x.jpg") type("image/jpg") 2x
+      );
     width: 245px;
     min-height: 288px;
   }
