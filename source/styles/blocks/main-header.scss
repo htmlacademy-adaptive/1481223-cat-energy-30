@@ -51,6 +51,14 @@
   align-items: center;
   text-decoration: none;
   pointer-events: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-header__logo {

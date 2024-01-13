@@ -11,6 +11,15 @@
   text-transform: uppercase;
   border: none;
 
+  &:hover {
+    background-color: $primary-green-hover;
+  }
+
+  &:active {
+    background-color: $primary-green-hover;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   @include media-tablet {
     font-size: 20px;
     line-height: 26px;
@@ -20,4 +29,10 @@
 .button--secondary {
   background-color: $light-gray-color;
   color: $primary-text-color;
+
+  &:hover,
+  &:active {
+    background-color: $special-grey2;
+    color: $primary-text-color;
+  }
 }

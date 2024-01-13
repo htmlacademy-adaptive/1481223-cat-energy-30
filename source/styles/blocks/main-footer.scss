@@ -74,6 +74,14 @@
   color: $social-icon-color;
   pointer-events: none;
 
+  &:hover::after {
+    background-color: $primary-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     content: " ";
     display: block;
@@ -140,6 +148,15 @@
   height: 22px;
 }
 
+.main-footer__social-link:hover {
+  background-color: $primary-green;
+}
+
+.main-footer__social-link:active {
+  background-color: $primary-green;
+  opacity: 0.3;
+}
+
 .main-footer__map-wrapper {
   width: 100%;
   position: relative;
@@ -189,6 +206,15 @@
   padding-bottom: 20px;
   text-align: center;
   border-bottom: 1px solid $footer-border-gray;
+  color: $light-black-color;
+
+  &:hover {
+    color: $logo-footer-focus-color;
+  }
+
+  &:active {
+    color: $logo-footer-active;
+  }
 
   @include media-tablet {
     padding-top: 0;

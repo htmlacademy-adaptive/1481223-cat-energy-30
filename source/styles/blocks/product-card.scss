@@ -95,6 +95,14 @@
   &:hover::after {
     background-position: 0 0;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:active::after {
+    background-position: 0 0;
+  }
 }
 
 .product-card--slim-icon {
