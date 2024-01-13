@@ -1,9 +1,78 @@
 .hero {
+  position: relative;
   color: $light-color;
+
+  @include media-tablet {
+    color: $secondary-text-color;
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 302px;
+    background:
+      linear-gradient(rgba(94, 170, 47, 0.85) 62.4%, rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../images/hero-cat@1x.webp") type("image/webp") 1x,
+        url("../../images/hero-cat@2x.webp") type("image/webp") 2x,
+        url("../../images/hero-cat@1x.jpg") type("image/jpg") 1x,
+        url("../../images/hero-cat@2x.jpg") type("image/jpg") 2x
+      ),
+      linear-gradient(rgba(65, 64, 69, 1), rgba(65, 64, 69, 1));
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: auto 320px;
+
+    @include media-tablet {
+      display: none;
+    }
+  }
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 20px;
+
+  @include media-tablet {
+    display: block;
+    padding-top: 65px;
+    padding-bottom: 0;
+  }
+
+  @include media-desctop {
+    padding-top: 29px;
+    min-height: 549px;
+    padding-bottom: 82px;
+  }
 }
 
 .hero__title {
   text-align: center;
+  z-index: 2;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 25px;
+
+  @include media-tablet {
+    margin-bottom: 40px;
+    margin-left: 90px;
+    margin-right: 202px;
+    text-align: left;
+  }
+
+  @include media-desctop {
+    margin-top: 90px;
+    margin-bottom: 40px;
+    margin-right: 0;
+    margin-left: 80px;
+    width: 416px;
+  }
 }
 
 .hero__slogan {
@@ -12,4 +81,57 @@
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
+  z-index: 2;
+  position: relative;
+  margin-left: 40px;
+  margin-right: 42px;
+  margin-top: 0;
+  margin-bottom: 29px;
+
+  @include media-tablet {
+    margin-left: 90px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+
+  @include media-desctop {
+    margin-left: 80px;
+    margin-bottom: 52px;
+    width: 283px;
+  }
+}
+
+.hero__image-wrapper {
+  position: relative;
+  z-index: 1;
+
+  @include media-tablet {
+    margin-top: -83px;
+  }
+
+  @include media-desctop {
+    margin-top: -370px;
+    margin-left: 447px;
+  }
+}
+
+.hero__button {
+  position: relative;
+  width: 260px;
+  text-align: center;
+  margin-top: 3px;
+  order: 1;
+  z-index: 2;
+
+  @include media-tablet {
+    margin-left: 90px;
+    margin-top: 0;
+    width: 244px;
+    order: 0;
+  }
+
+  @include media-desctop {
+    margin-left: 80px;
+  }
 }

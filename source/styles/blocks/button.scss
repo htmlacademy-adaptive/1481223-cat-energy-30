@@ -1,4 +1,6 @@
 .button {
+  display: inline-block;
+  padding: 10px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
@@ -8,6 +10,11 @@
   background-color: $primary-green;
   text-transform: uppercase;
   border: none;
+
+  @include media-tablet {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .button--secondary {

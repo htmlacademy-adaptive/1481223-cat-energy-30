@@ -1,6 +1,119 @@
+.catalog-card-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-areas: "image text" "button button";
+
+  @include media-tablet {
+    grid-template-columns: 324px;
+    grid-template-areas: "image" "text" "button";
+    padding-top: 10px;
+    padding-bottom: 40px;
+
+    &::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 81px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $light-gray-color;
+    }
+  }
+
+  @include media-desctop {
+    grid-template-columns: 245px;
+  }
+}
+
+.catalog-card-item__image-wrapper {
+  grid-area: image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media-tablet {
+    margin: 0 auto;
+    min-height: 210px;
+    width: 200px;
+    z-index: 2;
+  }
+
+  @include media-desctop {
+    width: 169px;
+  }
+}
+
+.catalog-card-item__description {
+  grid-area: text;
+}
+
+.catalog-card-item__button {
+  grid-area: button;
+  margin-top: 17px;
+  text-align: center;
+
+  @include media-tablet {
+    z-index: 2;
+    margin-top: 32px;
+    margin-left: 37px;
+    margin-right: 37px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @include media-desctop {
+    margin-left: 38px;
+    margin-right: 38px;
+  }
+}
+
+.catalog-card-item__title {
+  margin-top: 0;
+  margin-bottom: 14px;
+  width: 76px;
+
+  @include media-tablet {
+    margin-top: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: auto;
+    z-index: 2;
+  }
+}
+
+.catalog-card-item__data {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+
+  @include media-tablet {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $special-grey;
+    margin-left: 37px;
+    margin-right: 37px;
+    z-index: 2;
+  }
+
+  @include media-desctop {
+    margin-left: 38px;
+    margin-right: 38px;
+  }
+}
+
 .catalog-card-item__data-name,
 .catalog-card-item__data-value {
   font-size: 12px;
   line-height: 16px;
   color: $primary-text-color;
+
+  @include media-tablet {
+    font-size: 16px;
+    line-height: 20px;
+    z-index: 2;
+  }
 }

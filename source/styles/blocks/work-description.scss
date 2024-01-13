@@ -1,17 +1,80 @@
+.work-description__container {
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  @include media-tablet {
+    padding-top: 45px;
+    padding-bottom: 47px;
+    border-bottom: 1px solid $work-description-border;
+  }
+
+  @include media-desctop {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
 .work-description__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @include media-tablet {
+    display: grid;
+    grid-template-columns: 249px 249px;
+    gap: 37px 137px;
+  }
+
+  @include media-desctop {
+    grid-template-columns: 250px 250px 250px 250px;
+    gap: 37px 77px;
+  }
 }
 
 .work-description__item {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 14px;
   line-height: 18px;
   color: $primary-text-color;
+
+  @include media-tablet {
+    position: relative;
+    display: block;
+    min-height: 280px;
+    font-size: 16px;
+    line-height: 24px;
+    counter-increment: list-counter 1;
+
+    &::after {
+      content: counter(list-counter);
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-family: $secondary-font;
+      font-size: 280px;
+      line-height: 280px;
+      color: $light-gray-color;
+    }
+
+    &::before {
+      margin-top: 40px;
+    }
+  }
 }
 
 .work-description__title {
   color: $secondary-text-color;
+  margin-top: 0;
+  margin-bottom: 40px;
+
+  @include media-tablet {
+    margin-bottom: 32px;
+  }
 }
 
 .work-description__item--food-icon {
@@ -25,6 +88,11 @@
     background-size: 30px 32px;
     background-position: center;
     background-repeat: no-repeat;
+
+    @include media-tablet {
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
@@ -39,6 +107,11 @@
     background-size: 26px 29px;
     background-position: center;
     background-repeat: no-repeat;
+
+    @include media-tablet {
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
@@ -53,6 +126,11 @@
     background-size: 25px 30px;
     background-position: center;
     background-repeat: no-repeat;
+
+    @include media-tablet {
+      width: 80px;
+      height: 80px;
+    }
   }
 }
 
@@ -67,5 +145,25 @@
     background-size: 26px 31px;
     background-position: center;
     background-repeat: no-repeat;
+
+    @include media-tablet {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+
+.work-description__text {
+  width: 200px;
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include media-tablet {
+    position: relative;
+    width: 245px;
+    margin-top: 31px;
+    margin-left: 0;
+    z-index: 2;
   }
 }

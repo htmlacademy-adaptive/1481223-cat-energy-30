@@ -1,0 +1,13 @@
+.container {
+  margin: 0 auto;
+  width: 280px;
+  padding: 0 var(--padding-offset);
+
+  @include media-tablet {
+    width: 708px;
+  }
+
+  @include media-desctop {
+    width: 1220px;
+  }
+}
