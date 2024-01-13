@@ -160,7 +160,6 @@
   top: 0;
   height: 256px;
   width: 40px;
-  //background-image: url("../../images/drag-divider.svg");
   background-repeat: no-repeat;
   z-index: 3;
   color: $social-icon-color;
@@ -192,8 +191,17 @@
 
   @include media-tablet {
     height: 512px;
-    //background-image: url("../../images/drag-devider-medium.svg");
   }
+}
+
+.live-example__image-compare-divider-button {
+  position: absolute;
+  top: calc(50% - 20px);
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+  cursor: pointer;
 }
 
 .live-example__intro {
