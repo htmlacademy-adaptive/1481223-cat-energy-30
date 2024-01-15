@@ -1,6 +1,6 @@
 .work-description__container {
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
 
   @include media-tablet {
     padding-top: 45px;
@@ -10,6 +10,7 @@
 
   @include media-desctop {
     border-bottom: none;
+    padding-top: 71px;
     padding-bottom: 0;
   }
 }

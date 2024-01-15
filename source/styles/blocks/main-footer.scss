@@ -17,6 +17,7 @@
   @include media-tablet {
     font-size: 20px;
     line-height: 26px;
+    width: 155px;
   }
 }
 
@@ -35,6 +36,17 @@
     font-size: 16px;
     text-align: right;
   }
+
+  @include media-desctop {
+    text-align: left;
+  }
+}
+
+.main-footer__address-city {
+  @include media-tablet {
+    display: block;
+    margin-top: 20px;
+  }
 }
 
 .main-footer__socials-wrapper {
@@ -49,8 +61,12 @@
   @include media-tablet {
     border-bottom: none;
     padding: 0;
-    margin-left: auto;
+    margin-left: 160px;
     margin-right: auto;
+  }
+
+  @include media-desctop {
+    margin-left: 416px;
   }
 }
 
@@ -179,7 +195,7 @@
 }
 
 .main-footer__text-wrapper {
-  padding: 26px 0;
+  padding: 28px 0 26px;
   background-color: $light-gray-color;
 
   @include media-tablet {
@@ -203,7 +219,7 @@
 .main-footer__logo-title-wrapper {
   display: block;
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
   text-align: center;
   border-bottom: 1px solid $footer-border-gray;
   color: $light-black-color;
@@ -224,6 +240,7 @@
 }
 
 .main-footer__iframe {
+  display: block;
   width: 100%;
   border: none;
   background-image: url("../../images/map@1x.png");

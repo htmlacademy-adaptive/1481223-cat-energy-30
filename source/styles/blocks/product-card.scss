@@ -1,20 +1,20 @@
 .product-card {
   background: #f2f2f2;
   padding-top: 30px;
-  padding-bottom: 18px;
+  padding-bottom: 22px;
   padding-left: 20px;
   padding-right: 20px;
 
   @include media-tablet {
     padding-top: 77px;
-    padding-bottom: 53px;
+    padding-bottom: 57px;
     padding-left: 52px;
     padding-right: 316px;
   }
 
   @include media-desctop {
     padding-right: 61px;
-    padding-bottom: 55px;
+    padding-bottom: 58px;
   }
 }
 
@@ -40,14 +40,14 @@
   font-weight: 400;
   color: $primary-text-color;
   margin-top: 29px;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
   padding-bottom: 23px;
   border-bottom: 1px solid $footer-border-gray;
 
   @include media-tablet {
     margin-top: 24px;
     padding-bottom: 0;
-    margin-bottom: 48px;
+    margin-bottom: 52px;
     font-size: 16px;
     line-height: 24px;
     border-bottom: none;
@@ -55,7 +55,7 @@
 
   @include media-desctop {
     margin-top: 73px;
-    margin-bottom: 23px;
+    margin-bottom: 27px;
   }
 }
 
@@ -66,6 +66,7 @@
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
+  font-family: $secondary-font;
   text-decoration: none;
   color: $secondary-text-color;
   text-transform: uppercase;

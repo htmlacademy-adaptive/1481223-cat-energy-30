@@ -52,8 +52,9 @@
     line-height: 24px;
   }
 
-  @include media-tablet {
+  @include media-desctop {
     margin-bottom: 69px;
+    width: 434px;
   }
 }
 
@@ -79,14 +80,20 @@
 
   @include media-desctop {
     width: auto;
-    margin-top: 55px;
+    margin-top: 47px;/*55px*/
     margin-bottom: 75px;
     text-align: left;
   }
 }
 
 .live-example__cost-text {
+  @include media-tablet {
+    display: block;
+    margin-bottom: 9px;
+  }
+
   @include media-desctop {
+    display: inline;
     margin-right: 63px;
   }
 }
@@ -130,7 +137,7 @@
     width: 560px;
     height: 512px;
     margin: 0 auto;
-    margin-top: 99px;
+    margin-top: 88px;
   }
 
   @include media-desctop {

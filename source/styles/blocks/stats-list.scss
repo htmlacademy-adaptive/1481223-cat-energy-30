@@ -5,6 +5,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+
+  @include media-tablet {
+    gap: 43px;
+  }
 }
 
 .stats-list__stats-item {
@@ -53,6 +57,12 @@
 
   @include media-desctop {
     background-color: $live-example-background;
+  }
+}
+
+.stats-list__description--wide {
+  @include media-tablet {
+    width: 125px;
   }
 }
 
