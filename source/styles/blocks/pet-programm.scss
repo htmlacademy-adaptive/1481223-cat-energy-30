@@ -41,7 +41,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  max-width: 210px;
+  max-width: 226px;
 
   @include media-tablet {
     margin-top: 54px;
@@ -54,6 +54,7 @@
 
   @include media-desctop {
     margin-left: 0;
+    margin-top: 55px;
   }
 }
 
@@ -94,6 +95,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 23px;
+    padding-bottom: 24px;
     width: 628px;
     border: 1px solid $footer-border-gray;
     box-sizing: border-box;
@@ -137,6 +140,7 @@
 
   @include media-tablet {
     margin-left: 40px;
+    padding-top: 11px;
     padding-left: 20px;
     width: 628px;
     min-height: 175px;
@@ -144,6 +148,7 @@
 
   @include media-desctop {
     margin-left: 0;
+    padding-top: 9px;
     width: 1220px;
   }
 }
@@ -278,7 +283,15 @@
     background-color: $catalog-title-color;
 
     @include media-tablet {
-      top: 20px;
+      right: 14px;
+      top: 16px;
+      mask-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+    }
+
+    @include media-desctop {
+      top: 15px;
     }
   }
 }
@@ -311,7 +324,15 @@
     background-color: $catalog-title-color;
 
     @include media-tablet {
-      top: 20px;
+      right: 14px;
+      top: 16px;
+      mask-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+    }
+
+    @include media-desctop {
+      top: 15px;
     }
   }
 }
@@ -340,13 +361,17 @@
   &::before {
     content: " ";
     position: absolute;
-    top: 17px;
+    top: 14px; /*17px*/
     right: 0;
     width: 100vw;
     height: 2px;
     background-color: $primary-green;
     box-shadow: 100vw 0 0 $primary-green;
     z-index: -1;
+
+    @include media-tablet {
+      top: 22px;
+    }
   }
 
   @include media-tablet {
@@ -382,17 +407,19 @@
 }
 
 .pet-programm__programm-type-wrapper .pet-programm__label {
-  margin-bottom: 13px;
+  margin-bottom: 11px;/*13px*/
 
   @include media-tablet {
     width: 599px;
     margin-left: 27px;
     margin-right: 0;
+    margin-bottom: 10px;
   }
 
   @include media-desctop {
     width: 540px;
     margin-left: 28px;
+    margin-bottom: 12px;
   }
 }
 
@@ -425,7 +452,7 @@
 }
 
 .pet-programm__optional-wrapper .pet-programm__label {
-  margin-bottom: 13px;
+  margin-bottom: 10px; /*13px*/
 
   @include media-tablet {
     margin-bottom: 0;
@@ -486,8 +513,8 @@
 
 .pet-programm__optional-wrapper .pet-programm__legend {
   position: relative;
-  margin-top: 23px;
-  margin-bottom: 34px;
+  margin-top: 20px; /*23px*/
+  margin-bottom: 32px; /*34px*/
 
   @include media-tablet {
     margin-top: 65px;
@@ -506,6 +533,7 @@
   font-weight: 400;
   line-height: 16px;
   color: $secondary-text-color;
+  text-align: center;
 
   @include media-tablet {
     margin-left: 60px;
@@ -569,6 +597,7 @@
   @include media-tablet {
     width: 40px;
     height: 40px;
+    box-sizing: border-box;
   }
 }
 
@@ -597,6 +626,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @include media-tablet {
+    margin-left: 20px;
   }
 }
 
