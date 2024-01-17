@@ -10,7 +10,7 @@
 
 .catalog-optional-card-item__title {
   margin-top: 0;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 
   @include media-tablet {
     margin-bottom: 0;
@@ -21,11 +21,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 13px;
+  margin-top: 0;
   margin-bottom: 15px;
 
   @include media-tablet {
-    margin-top: 0;
     margin-bottom: 0;
   }
 }
@@ -64,10 +63,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 23px;
+    min-height: 21px;
   }
 
   @include media-desctop {
+    min-height: auto;
     margin-bottom: 0;
     flex-grow: 1;
   }
@@ -92,6 +94,6 @@
   }
 
   @include media-desctop {
-    text-align: center;
+    text-align: left;
   }
 }
