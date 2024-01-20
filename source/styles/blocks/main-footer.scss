@@ -50,6 +50,7 @@
 }
 
 .main-footer__socials-wrapper {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -57,6 +58,28 @@
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid $footer-border-gray;
+
+  /*&::before {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 1px;
+    background-color: $footer-border-gray;
+    width: 100vw;
+    transform: translateX(-50vw);
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 1px;
+    background-color: $footer-border-gray;
+    width: 100vw;
+    transform: translateX(-50vw);
+  }*/
 
   @include media-tablet {
     border-bottom: none;

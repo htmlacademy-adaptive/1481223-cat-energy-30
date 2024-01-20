@@ -93,7 +93,18 @@
         width: calc(100% + 40px);
         position: relative;
         left: -20px;
-        border-bottom: 1px solid $work-description-border;
+        //border-bottom: 1px solid $work-description-border;
+      }
+
+      .navigation-list__item::before {
+        content: " ";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        height: 1px;
+        background-color: $work-description-border;
+        width: 100vw;
+        transform: translateX(-50vw);
       }
 
       .navigation-list__link {
@@ -110,17 +121,18 @@
       &::before {
         content: " ";
         position: absolute;
+        left: 50%;
         top: 0;
-        left: -20px;
-        right: -20px;
         height: 1px;
         background-color: $work-description-border;
+        width: 100vw;
+        transform: translateX(-50vw);
       }
     }
 
     &--show {
       position: absolute;
-      top: 67px;
+      top: 65px;
       left: 0;
       right: 0;
       display: block;

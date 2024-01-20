@@ -29,11 +29,12 @@
   &::after {
     content: " ";
     position: absolute;
+    left: 50%;
     bottom: 0;
-    left: -20px;
-    right: -20px;
     height: 1px;
-    background-color: $special-grey2;
+    background-color: $footer-border-gray;
+    width: 100vw;
+    transform: translateX(-50vw);
 
     @include media-tablet {
       display: none;
@@ -79,11 +80,12 @@
   &::after {
     content: " ";
     position: absolute;
+    left: 50%;
     bottom: 0;
-    left: -20px;
-    right: -20px;
     height: 1px;
-    background-color: $special-grey2;
+    background-color: $footer-border-gray;
+    width: 100vw;
+    transform: translateX(-50vw);
 
     @include media-tablet {
       display: none;

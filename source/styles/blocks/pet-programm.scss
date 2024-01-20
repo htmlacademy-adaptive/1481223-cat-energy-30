@@ -72,14 +72,15 @@
 .pet-programm__programm-type-wrapper {
   position: relative;
 
-  &::before {
+  &::after {
     content: " ";
     position: absolute;
-    left: -20px;
-    right: -20px;
+    left: 50%;
     bottom: 0;
     height: 1px;
     background-color: $footer-border-gray;
+    width: 100vw;
+    transform: translateX(-50vw);
 
     @include media-tablet {
       display: none;
@@ -195,7 +196,7 @@
     border: 1px solid $primary-text-color;
   }
 
-  &:invalid {
+  &:user-invalid {
     border: 1px solid $error-color;
   }
 
@@ -342,6 +343,12 @@
     border: 1px solid $error-color;
   }
 
+  &::after {
+    background-color: $error-color;
+  }
+}
+
+.pet-programm__input-wrapper:has(.pet-programm__input:user-invalid) {
   &::after {
     background-color: $error-color;
   }
