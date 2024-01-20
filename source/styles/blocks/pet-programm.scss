@@ -107,6 +107,8 @@
     margin-left: 0;
     margin-right: 0;
     width: 570px;
+    min-height: 196px;
+    box-sizing: border-box;
   }
 }
 
@@ -274,12 +276,12 @@
   &::after {
     content: " ";
     position: absolute;
-    top: 16px;
+    top: 14px;
     right: 12px;
-    width: 17px;
-    height: 13px;
+    width: 20px;
+    height: 20px;
     mask-image: url("../../images/icons/stack.svg#email-icon");
-    mask-size: 17px 13px;
+    mask-size: 20px 20px;
     mask-repeat: no-repeat;
     background-color: $catalog-title-color;
 
@@ -315,12 +317,12 @@
   &::after {
     content: " ";
     position: absolute;
-    top: 16px;
+    top: 14px;
     right: 12px;
-    width: 17px;
-    height: 13px;
+    width: 20px;
+    height: 20px;
     mask-image: url("../../images/icons/stack.svg#phone-icon");
-    mask-size: 17px 13px;
+    mask-size: 20px 20px;
     mask-repeat: no-repeat;
     background-color: $catalog-title-color;
 
@@ -414,19 +416,20 @@
 }
 
 .pet-programm__programm-type-wrapper .pet-programm__label {
-  margin-bottom: 11px;/*13px*/
+  margin-bottom: 13px;
 
   @include media-tablet {
     width: 599px;
     margin-left: 27px;
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 13px;
   }
 
   @include media-desctop {
     width: 540px;
     margin-left: 28px;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
+    min-height: 40px;
   }
 }
 
@@ -459,13 +462,21 @@
 }
 
 .pet-programm__optional-wrapper .pet-programm__label {
-  margin-bottom: 10px; /*13px*/
+  margin-bottom: 12px;
 
   @include media-tablet {
     margin-bottom: 0;
     width: 221px;
   }
 }
+
+/*.pet-programm__optional-wrapper .pet-programm__label:first-child {
+  margin-bottom: 13px;
+
+  @include media-tablet {
+    margin-bottom: 0;
+  }
+}*/
 
 .pet-programm__optional-wrapper .pet-programm__label:last-child {
   margin-bottom: 34px;
@@ -479,11 +490,6 @@
   margin-top: 26px;
   margin-bottom: 35px;
   max-width: 187px;
-
-  /*&::before {
-    top: 25%;
-    transform: translateY(-25%);
-  }*/
 
   &::after {
     top: 25%;
@@ -520,8 +526,8 @@
 
 .pet-programm__optional-wrapper .pet-programm__legend {
   position: relative;
-  margin-top: 20px; /*23px*/
-  margin-bottom: 32px; /*34px*/
+  margin-top: 23px; /*23px*/
+  margin-bottom: 34px; /*34px*/
 
   @include media-tablet {
     margin-top: 65px;
@@ -534,7 +540,7 @@
 }
 
 .pet-programm__hint {
-  margin-top: 21px;
+  margin-top: 17px; /*21px*/
   margin-bottom: 32px;
   font-size: 14px;
   font-weight: 400;
@@ -560,6 +566,7 @@
   height: 30px;
   border: 1px solid $special-grey;
   border-radius: 50%;
+  box-sizing: border-box;
 
   &:hover {
     border: 1px solid $radio-border-color;
@@ -596,6 +603,7 @@
   width: 30px;
   height: 30px;
   border: 1px solid $special-grey;
+  box-sizing: border-box;
 
   &:hover {
     border: 1px solid $radio-border-color;
@@ -604,7 +612,6 @@
   @include media-tablet {
     width: 40px;
     height: 40px;
-    box-sizing: border-box;
   }
 }
 
