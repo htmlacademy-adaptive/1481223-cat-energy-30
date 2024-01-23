@@ -115,8 +115,12 @@
   }
 
   @include media-desctop {
-    margin-top: -370px;
-    margin-left: 447px;
+    //margin-top: -370px;
+    //margin-left: 447px;
+    position: absolute;
+    top: 30px;
+    left: 557px;
+    margin: 0;
   }
 }
 

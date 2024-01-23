@@ -48,10 +48,7 @@
       <section class="pet-programm">
         <div class="pet-programm__container container">
           <h1 class="pet-programm__title title title--h1">Подбор программы</h1>
-          <p class="pet-programm__intro-text">
-            Заполните анкету, и мы подберем
-            программу питания для вашего кота
-          </p>
+          <p class="pet-programm__intro-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="pet-programm__form" action="https://echo.htmlacademy.ru">
             <div class="pet-programm__fieldsets-wrapper">
               <fieldset class="pet-programm__pet-data-wrapper">
@@ -59,19 +56,19 @@
                 <div class="pet-programm__label">
                   <label class="pet-programm__input-name" for="pet-name">Имя:*</label>
                   <div class="pet-programm__input-wrapper pet-programm__input-wrapper--pet-name">
-                    <input class="pet-programm__input" id="pet-name" type="text" name="pet-name" value="Барсик">
+                    <input class="pet-programm__input" id="pet-name" type="text" name="pet-name" value="Барсик" placeholder="Барсик" required>
                   </div>
                 </div>
                 <div class="pet-programm__label">
                   <label class="pet-programm__input-name" for="pet-weight">Вес (кг):*</label>
                   <div class="pet-programm__input-wrapper pet-programm__input-wrapper--pet-weight">
-                    <input class="pet-programm__input" id="pet-weight" type="text" name="pet-weight" value="7">
+                    <input class="pet-programm__input" id="pet-weight" type="text" name="pet-weight" value="7" placeholder="7" required>
                   </div>
                 </div>
                 <div class="pet-programm__label">
                   <label class="pet-programm__input-name" for="pet-age">Возраст (лет):</label>
                   <div class="pet-programm__input-wrapper pet-programm__input-wrapper--pet-age">
-                    <input class="pet-programm__input" id="pet-age" type="text" name="pet-age" value="7">
+                    <input class="pet-programm__input" id="pet-age" type="text" name="pet-age" value="7" placeholder="7" required>
                   </div>
                 </div>
               </fieldset>
@@ -131,9 +128,7 @@
             </fieldset>
             <div class="pet-programm__submit-wrapper">
               <button class="pet-programm__button button" type="submit">Отправить заявку</button>
-              <p class="pet-programm__hint">
-                * — Обязательные поля
-              </p>
+              <p class="pet-programm__hint">* — Обязательные поля</p>
             </div>
           </form>
         </div>
@@ -144,11 +139,7 @@
         <div class="main-footer__text-wrapper">
           <div class="main-footer__text-container">
             <p class="main-footer__invite-text">Приглашаем<br> к сотрудничеству дилеров!</p>
-            <address class="main-footer__address">
-              ул. Большая
-              Конюшенная, д. 19/8
-              <span class="main-footer__address-city">Санкт-Петербург</span>
-            </address>
+            <address class="main-footer__address">ул. Большая Конюшенная, д. 19/8 <span class="main-footer__address-city">Санкт-Петербург</span></address>
           </div>
         </div>
         <iframe class="main-footer__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bcbdd1e43705df5175867bc851a8bea1567a8a1c5d960b0e6033b16215a73a1&amp;source=constructor" width="320" height="362"></iframe>
@@ -188,16 +179,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      let header_conteiner = document.querySelector('.main-header__container--no-js').classList.remove('main-header__container--no-js');
-      let button_toggle = document.querySelector('.button-toggle--no-js');
-      button_toggle.classList.remove('button-toggle--no-js');
-      let header_nav = document.querySelector('.main-header__navigation--no-js')
-      header_nav.classList.remove('main-header__navigation--no-js');
-      button_toggle.addEventListener('click', function() {
-        button_toggle.classList.toggle('button-toggle--close');
-        header_nav.classList.toggle('main-header__navigation--show');
-      })
-    </script>
   </body>
 </html>

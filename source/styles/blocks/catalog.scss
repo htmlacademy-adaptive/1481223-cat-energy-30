@@ -38,6 +38,8 @@
 
     @include media-tablet {
       display: none;
+      width: auto;
+      transform: none;
     }
   }
 
@@ -49,6 +51,7 @@
 
 .catalog__item--show-more {
   text-align: center;
+  position: relative;
 
   @include media-tablet {
     padding-top: 132px;

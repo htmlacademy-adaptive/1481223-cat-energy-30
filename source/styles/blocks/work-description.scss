@@ -31,7 +31,7 @@
   }
 
   @include media-desctop {
-    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-columns: 250px 246px 248px 250px;
     gap: 37px 77px;
   }
 }
@@ -166,5 +166,13 @@
     margin-top: 31px;
     margin-left: 0;
     z-index: 2;
+  }
+}
+
+.work-description__br {
+  display: none;
+
+  @include media-tablet {
+    display: block;
   }
 }
