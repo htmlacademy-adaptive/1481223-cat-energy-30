@@ -205,6 +205,10 @@
     border: 1px solid $error-color;
   }
 
+  &:disabled {
+    opacity: 0.2;
+  }
+
   @include media-tablet {
     padding-left: 20px;
     height: 52px;
@@ -597,8 +601,16 @@
   opacity: 0.3;
 }
 
+.custom-toogle[type="radio"]:disabled ~ .pet-programm__markup {
+  opacity: 0.2;
+}
+
 .custom-toogle[type="radio"]:active ~ .pet-programm__markup-text {
   opacity: 0.3;
+}
+
+.custom-toogle[type="radio"]:disabled ~ .pet-programm__markup-text {
+  opacity: 0.2;
 }
 
 .custom-toogle[type="checkbox"] ~ .pet-programm__markup {
@@ -634,8 +646,16 @@
   opacity: 0.3;
 }
 
+.custom-toogle[type="checkbox"]:disabled ~ .pet-programm__markup {
+  opacity: 0.2;
+}
+
 .custom-toogle[type="checkbox"]:active ~ .pet-programm__markup-text {
   opacity: 0.3;
+}
+
+.custom-toogle[type="checkbox"]:disabled ~ .pet-programm__markup-text {
+  opacity: 0.2;
 }
 
 .pet-programm__markup-text {
