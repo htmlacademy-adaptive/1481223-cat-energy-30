@@ -140,6 +140,7 @@
   padding-right: 14px;
   padding-bottom: 14px;
   border: 1px solid $input-border-gray;
+  margin: 0;
 
   @include media-tablet {
     margin-left: 40px;
@@ -540,7 +541,7 @@
 }
 
 .pet-programm__hint {
-  margin-top: 17px; /*21px*/
+  margin-top: 21px; /*21px*/
   margin-bottom: 32px;
   font-size: 14px;
   font-weight: 400;
