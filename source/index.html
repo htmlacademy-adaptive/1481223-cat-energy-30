@@ -171,7 +171,18 @@
             <address class="main-footer__address">ул. Большая Конюшенная, д. 19/8 <span class="main-footer__address-city">Санкт-Петербург</span></address>
           </div>
         </div>
-        <iframe class="main-footer__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bcbdd1e43705df5175867bc851a8bea1567a8a1c5d960b0e6033b16215a73a1&amp;source=constructor" width="320" height="362"></iframe>
+        <div class="main-footer__iframe-wrapper">
+          <picture>
+            <source media="(min-width: 1440px)" type="image/webp" srcset="images/map-large@1x.webp 1x, images/map-large@2x.webp 2x" height="400" width="1440">
+            <source media="(min-width: 1440px)" type="image/png" srcset="images/map-large@1x.png 1x, images/map-large@2x.png 2x" height="400" width="1440">
+            <source media="(min-width: 768px)" type="image/webp" srcset="images/map-medium@1x.webp 1x, images/map-medium@2x.webp 2x" height="400" width="768">
+            <source media="(min-width: 768px)" type="image/png" srcset="images/map-medium@1x.png 1x, images/map-medium@2x.png 2x" height="400" width="768">
+            <source type="image/webp" srcset="images/map@1x.webp 1x, images/map@2x.webp 2x" height="362" width="320">
+            <img src="images/map@1x.png" class="main-footer__iframe-image main-footer__iframe-image--no-js" srcset="images/map@1x.png 1x,
+            images/map@2x.png 2x" height="362" width="320">
+          </picture>
+          <iframe class="main-footer__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bcbdd1e43705df5175867bc851a8bea1567a8a1c5d960b0e6033b16215a73a1&amp;source=constructor" width="320" height="362"></iframe>
+        </div>
       </div>
       <div class="container">
         <div class="main-footer__content-wrapper">
