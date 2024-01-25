@@ -8,6 +8,8 @@
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
@@ -59,7 +61,7 @@
                     <source media="(min-width: 768px)" type="image/png" srcset="images/catalog-1-medium@1x.png 1x, images/catalog-1-medium@2x.png 2x" width="161" height="172">
                     <source type="image/webp" srcset="images/catalog-1-small@1x.webp 1x, images/catalog-1-small@2x.webp 2x" width="68" height="86">
                     <img class="catalog-card-item__image" src="images/catalog-1-small@1x.png" srcset="images/catalog-1-small@1x.png 1x,
-                    images/catalog-1-small@2x.png 2x" width="68" height="86" alt="Товар">
+                    images/catalog-1-small@2x.png 2x" loading="lazy" width="68" height="86" alt="Товар">
                   </picture>
                 </a>
                 <div class="catalog-card-item__description">
@@ -87,7 +89,7 @@
                     <source media="(min-width: 768px)" type="image/png" srcset="images/catalog-2-medium@1x.png 1x, images/catalog-2-medium@2x.png 2x" width="168" height="206">
                     <source type="image/webp" srcset="images/catalog-2-small@1x.webp 1x, images/catalog-2-small@2x.webp 2x" width="84" height="100">
                     <img class="catalog-card-item__image" src="images/catalog-2-small@1x.png" srcset="images/catalog-2-small@1x.png 1x,
-                    images/catalog-2-small@2x.png 2x" width="84" height="100" alt="Товар">
+                    images/catalog-2-small@2x.png 2x" loading="lazy" width="84" height="100" alt="Товар">
                   </picture>
                 </a>
                 <div class="catalog-card-item__description">
@@ -115,7 +117,7 @@
                     <source media="(min-width: 768px)" type="image/png" srcset="images/catalog-3-medium@1x.png 1x, images/catalog-3-medium@2x.png 2x" width="163" height="174">
                     <source type="image/webp" srcset="images/catalog-3-small@1x.webp 1x, images/catalog-3-small@2x.webp 2x" width="68" height="78">
                     <img class="catalog-card-item__image" src="images/catalog-3-small@1x.png" srcset="images/catalog-3-small@1x.png 1x,
-                    images/catalog-3-small@2x.png 2x" width="68" height="78" alt="Товар">
+                    images/catalog-3-small@2x.png 2x" loading="lazy" width="68" height="78" alt="Товар">
                   </picture>
                 </a>
                 <div class="catalog-card-item__description">
@@ -143,7 +145,7 @@
                     <source media="(min-width: 768px)" type="image/png" srcset="images/catalog-4-medium@1x.png 1x, images/catalog-4-medium@2x.png 2x" width="168" height="200">
                     <source type="image/webp" srcset="images/catalog-4-small@1x.webp 1x, images/catalog-4-small@2x.webp 2x" width="84" height="100">
                     <img class="catalog-card-item__image" src="images/catalog-4-small@1x.png" srcset="images/catalog-4-small@1x.png 1x,
-                    images/catalog-4-small@2x.png 2x" width="84" height="100" alt="Товар">
+                    images/catalog-4-small@2x.png 2x" loading="lazy" width="84" height="100" alt="Товар">
                   </picture>
                 </a>
                 <div class="catalog-card-item__description">
@@ -171,7 +173,7 @@
                     <source media="(min-width: 768px)" type="image/png" srcset="images/catalog-5-medium@1x.png 1x, images/catalog-5-medium@2x.png 2x" width="161" height="171">
                     <source type="image/webp" srcset="images/catalog-5-small@1x.webp 1x, images/catalog-5-small@2x.webp 2x" width="68" height="78">
                     <img class="catalog-card-item__image" src="images/catalog-5-small@1x.png" srcset="images/catalog-5-small@1x.png 1x,
-                    images/catalog-5-small@2x.png 2x" width="68" height="78" alt="Товар">
+                    images/catalog-5-small@2x.png 2x" loading="lazy" width="68" height="78" alt="Товар">
                   </picture>
                 </a>
                 <div class="catalog-card-item__description">
@@ -199,7 +201,7 @@
                     <source media="(min-width: 768px)" type="image/png" srcset="images/catalog-6-medium@1x.png 1x, images/catalog-6-medium@2x.png 2x" width="168" height="200">
                     <source type="image/webp" srcset="images/catalog-6-small@1x.webp 1x, images/catalog-6-small@2x.webp 2x" width="84" height="100">
                     <img class="catalog-card-item__image" src="images/catalog-6-small@1x.png" srcset="images/catalog-6-small@1x.png 1x,
-                    images/catalog-6-small@2x.png 2x" width="84" height="100" alt="Товар">
+                    images/catalog-6-small@2x.png 2x" loading="lazy" width="84" height="100" alt="Товар">
                   </picture>
                 </a>
                 <div class="catalog-card-item__description">
@@ -227,7 +229,7 @@
                     <source media="(min-width: 768px)" type="image/png" srcset="images/catalog-7-medium@1x.png 1x, images/catalog-7-medium@2x.png 2x" width="163" height="174">
                     <source type="image/webp" srcset="images/catalog-7-small@1x.webp 1x, images/catalog-7-small@2x.webp 2x" width="72" height="84">
                     <img class="catalog-card-item__image" src="images/catalog-7-small@1x.png" srcset="images/catalog-7-small@1x.png 1x,
-                    images/catalog-6-small@2x.png 2x" width="72" height="84" alt="Товар">
+                    images/catalog-6-small@2x.png 2x" loading="lazy" width="72" height="84" alt="Товар">
                   </picture>
                 </a>
                 <div class="catalog-card-item__description">
