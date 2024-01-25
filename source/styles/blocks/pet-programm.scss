@@ -41,7 +41,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  max-width: 210px;
+  max-width: 226px;
 
   @include media-tablet {
     margin-top: 54px;
@@ -54,6 +54,7 @@
 
   @include media-desctop {
     margin-left: 0;
+    margin-top: 55px;
   }
 }
 
@@ -71,14 +72,15 @@
 .pet-programm__programm-type-wrapper {
   position: relative;
 
-  &::before {
+  &::after {
     content: " ";
     position: absolute;
-    left: -20px;
-    right: -20px;
+    left: 50%;
     bottom: 0;
     height: 1px;
     background-color: $footer-border-gray;
+    width: 100vw;
+    transform: translateX(-50vw);
 
     @include media-tablet {
       display: none;
@@ -94,6 +96,8 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-top: 23px;
+    padding-bottom: 24px;
     width: 628px;
     border: 1px solid $footer-border-gray;
     box-sizing: border-box;
@@ -102,7 +106,11 @@
   @include media-desctop {
     margin-left: 0;
     margin-right: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
     width: 570px;
+    min-height: 196px;
+    box-sizing: border-box;
   }
 }
 
@@ -125,6 +133,7 @@
 }
 
 .pet-programm__comment-text {
+  display: block;
   width: 280px;
   min-height: 150px;
   resize: none;
@@ -134,9 +143,13 @@
   padding-right: 14px;
   padding-bottom: 14px;
   border: 1px solid $input-border-gray;
+  margin: 0;
+  margin-bottom: 23px;
 
   @include media-tablet {
     margin-left: 40px;
+    margin-bottom: 65px;
+    padding-top: 11px;
     padding-left: 20px;
     width: 628px;
     min-height: 175px;
@@ -144,6 +157,8 @@
 
   @include media-desctop {
     margin-left: 0;
+    margin-bottom: 70px;
+    padding-top: 9px;
     width: 1220px;
   }
 }
@@ -182,6 +197,22 @@
   box-sizing: border-box;
   border: 1px solid $input-border-gray;
 
+  &:hover {
+    border: 1px solid $special-grey;
+  }
+
+  &:focus {
+    border: 1px solid $primary-text-color;
+  }
+
+  &:user-invalid {
+    border: 1px solid $error-color;
+  }
+
+  &:disabled {
+    opacity: 0.2;
+  }
+
   @include media-tablet {
     padding-left: 20px;
     height: 52px;
@@ -190,6 +221,10 @@
 
 .pet-programm__input-wrapper {
   margin-left: auto;
+
+  &:focus-within::after {
+    background-color: $primary-green;
+  }
 }
 
 .pet-programm__input-wrapper--pet-name {
@@ -252,17 +287,25 @@
   &::after {
     content: " ";
     position: absolute;
-    top: 16px;
+    top: 14px;
     right: 12px;
-    width: 17px;
-    height: 13px;
+    width: 20px;
+    height: 20px;
     mask-image: url("../../images/icons/stack.svg#email-icon");
-    mask-size: 17px 13px;
+    mask-size: 20px 20px;
     mask-repeat: no-repeat;
     background-color: $catalog-title-color;
 
     @include media-tablet {
-      top: 20px;
+      right: 14px;
+      top: 16px;
+      mask-size: 20px 20px;
+      width: 20px;
+      height: 20px;
+    }
+
+    @include media-desctop {
+      top: 15px;
     }
   }
 }
@@ -285,18 +328,42 @@
   &::after {
     content: " ";
     position: absolute;
-    top: 16px;
+    top: 14px;
     right: 12px;
-    width: 17px;
-    height: 13px;
+    width: 20px;
+    height: 20px;
     mask-image: url("../../images/icons/stack.svg#phone-icon");
-    mask-size: 17px 13px;
+    mask-size: 20px 20px;
     mask-repeat: no-repeat;
     background-color: $catalog-title-color;
 
     @include media-tablet {
-      top: 20px;
+      right: 14px;
+      top: 16px;
+      mask-size: 20px 20px;
+      width: 20px;
+      height: 20px;
     }
+
+    @include media-desctop {
+      top: 15px;
+    }
+  }
+}
+
+.pet-programm__input-wrapper--error {
+  .pet-programm__input {
+    border: 1px solid $error-color;
+  }
+
+  &::after {
+    background-color: $error-color;
+  }
+}
+
+.pet-programm__input-wrapper:has(.pet-programm__input:user-invalid) {
+  &::after {
+    background-color: $error-color;
   }
 }
 
@@ -314,13 +381,17 @@
   &::before {
     content: " ";
     position: absolute;
-    top: 17px;
+    top: calc(50% + 2px); /*17px*/
     right: 0;
     width: 100vw;
     height: 2px;
     background-color: $primary-green;
     box-shadow: 100vw 0 0 $primary-green;
     z-index: -1;
+
+    @include media-tablet {
+      top: calc(50% + 4px);
+    }
   }
 
   @include media-tablet {
@@ -362,11 +433,14 @@
     width: 599px;
     margin-left: 27px;
     margin-right: 0;
+    margin-bottom: 13px;
   }
 
   @include media-desctop {
     width: 540px;
     margin-left: 28px;
+    margin-bottom: 13px;
+    min-height: 40px;
   }
 }
 
@@ -399,13 +473,21 @@
 }
 
 .pet-programm__optional-wrapper .pet-programm__label {
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 
   @include media-tablet {
     margin-bottom: 0;
     width: 221px;
   }
 }
+
+/*.pet-programm__optional-wrapper .pet-programm__label:first-child {
+  margin-bottom: 13px;
+
+  @include media-tablet {
+    margin-bottom: 0;
+  }
+}*/
 
 .pet-programm__optional-wrapper .pet-programm__label:last-child {
   margin-bottom: 34px;
@@ -416,16 +498,11 @@
 }
 
 .pet-programm__pet-owner-wrapper .pet-programm__legend {
-  margin-top: 26px;
+  padding-top: 26px;
   margin-bottom: 35px;
   max-width: 187px;
 
-  /*&::before {
-    top: 25%;
-    transform: translateY(-25%);
-  }*/
-
-  &::after {
+  /*&::after {
     top: 25%;
     transform: translateY(-25%);
 
@@ -433,16 +510,24 @@
       top: 50%;
       transform: translateY(-50%);
     }
-  }
+  }*/
 
   @include media-tablet {
-    margin-top: 65px;
+    padding-top: 65px;
     margin-bottom: 76px;
     max-width: unset;
+
+    &::before {
+      top: calc(50% + 37px);
+    }
   }
 
   @include media-desctop {
-    margin-top: 70px;
+    padding-top: 70px;
+
+    &::before {
+      top: calc(50% + 39px);
+    }
   }
 }
 
@@ -460,26 +545,27 @@
 
 .pet-programm__optional-wrapper .pet-programm__legend {
   position: relative;
-  margin-top: 23px;
-  margin-bottom: 34px;
+  //margin-top: 23px; /*23px*/
+  margin-bottom: 34px; /*34px*/
 
   @include media-tablet {
-    margin-top: 65px;
+    //margin-top: 65px;
     margin-bottom: 57px;
   }
 
-  @include media-desctop {
+  /*@include media-desctop {
     margin-top: 70px;
-  }
+  }*/
 }
 
 .pet-programm__hint {
-  margin-top: 21px;
+  margin-top: 21px; /*21px*/
   margin-bottom: 32px;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
   color: $secondary-text-color;
+  text-align: center;
 
   @include media-tablet {
     margin-left: 60px;
@@ -499,6 +585,11 @@
   height: 30px;
   border: 1px solid $special-grey;
   border-radius: 50%;
+  box-sizing: border-box;
+
+  &:hover {
+    border: 1px solid $radio-border-color;
+  }
 
   @include media-tablet {
     width: 40px;
@@ -517,11 +608,33 @@
   }
 }
 
+.custom-toogle[type="radio"]:active ~ .pet-programm__markup {
+  border: 1px solid $radio-border-color;
+  opacity: 0.3;
+}
+
+.custom-toogle[type="radio"]:disabled ~ .pet-programm__markup {
+  opacity: 0.2;
+}
+
+.custom-toogle[type="radio"]:active ~ .pet-programm__markup-text {
+  opacity: 0.3;
+}
+
+.custom-toogle[type="radio"]:disabled ~ .pet-programm__markup-text {
+  opacity: 0.2;
+}
+
 .custom-toogle[type="checkbox"] ~ .pet-programm__markup {
   display: block;
   width: 30px;
   height: 30px;
   border: 1px solid $special-grey;
+  box-sizing: border-box;
+
+  &:hover {
+    border: 1px solid $radio-border-color;
+  }
 
   @include media-tablet {
     width: 40px;
@@ -540,8 +653,33 @@
   }
 }
 
+.custom-toogle[type="checkbox"]:active ~ .pet-programm__markup {
+  border: 1px solid $radio-border-color;
+  opacity: 0.3;
+}
+
+.custom-toogle[type="checkbox"]:disabled ~ .pet-programm__markup {
+  opacity: 0.2;
+}
+
+.custom-toogle[type="checkbox"]:active ~ .pet-programm__markup-text {
+  opacity: 0.3;
+}
+
+.custom-toogle[type="checkbox"]:disabled ~ .pet-programm__markup-text {
+  opacity: 0.2;
+}
+
 .pet-programm__markup-text {
   margin-left: 15px;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @include media-tablet {
+    margin-left: 20px;
+  }
 }
 
 .pet-programm__button {

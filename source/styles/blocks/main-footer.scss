@@ -1,6 +1,7 @@
 .main-footer {
   background-color: $light-gray-color;
   margin: 0 auto;
+  width: 100%;
 }
 
 .main-footer__invite-text {
@@ -13,10 +14,13 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $light-black-color;
+  margin-block-start: 0;
+  margin-block-end: 0;
 
   @include media-tablet {
     font-size: 20px;
     line-height: 26px;
+    width: 155px;
   }
 }
 
@@ -35,9 +39,21 @@
     font-size: 16px;
     text-align: right;
   }
+
+  @include media-desctop {
+    text-align: left;
+  }
+}
+
+.main-footer__address-city {
+  @include media-tablet {
+    display: block;
+    margin-top: 20px;
+  }
 }
 
 .main-footer__socials-wrapper {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -49,8 +65,12 @@
   @include media-tablet {
     border-bottom: none;
     padding: 0;
-    margin-left: auto;
+    margin-left: 160px;
     margin-right: auto;
+  }
+
+  @include media-desctop {
+    margin-left: 416px;
   }
 }
 
@@ -73,6 +93,14 @@
   text-decoration: none;
   color: $social-icon-color;
   pointer-events: none;
+
+  &:hover::after {
+    background-color: $primary-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &::after {
     content: " ";
@@ -140,6 +168,15 @@
   height: 22px;
 }
 
+.main-footer__social-link:hover {
+  background-color: $primary-green;
+}
+
+.main-footer__social-link:active {
+  background-color: $primary-green;
+  opacity: 0.3;
+}
+
 .main-footer__map-wrapper {
   width: 100%;
   position: relative;
@@ -162,7 +199,7 @@
 }
 
 .main-footer__text-wrapper {
-  padding: 26px 0;
+  padding: 26px 0 26px;
   background-color: $light-gray-color;
 
   @include media-tablet {
@@ -172,10 +209,11 @@
   @include media-desctop {
     position: absolute;
     top: 95px;
-    left: 17%;
+    left: 110px;
     padding-left: 80px;
     padding-right: 78px;
     background-color: $light-color;
+    z-index: 2;
   }
 }
 
@@ -186,9 +224,18 @@
 .main-footer__logo-title-wrapper {
   display: block;
   padding-top: 40px;
-  padding-bottom: 20px;
+  padding-bottom: 16px;
   text-align: center;
   border-bottom: 1px solid $footer-border-gray;
+  color: $light-black-color;
+
+  &:hover {
+    color: $logo-footer-focus-color;
+  }
+
+  &:active {
+    color: $logo-footer-active;
+  }
 
   @include media-tablet {
     padding-top: 0;
@@ -198,20 +245,29 @@
 }
 
 .main-footer__iframe {
+  display: block;
   width: 100%;
   border: none;
-  background-image: url("../../images/map@1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
 
   @include media-tablet {
     height: 400px;
-    background-image: url("../../images/map-medium@1x.png");
   }
+}
 
-  @include media-desctop {
-    background-image: url("../../images/map-large@1x.png");
-  }
+.main-footer__iframe-wrapper {
+  position: relative;
+}
+
+.main-footer__iframe-image {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+  z-index: -1;
+}
+
+.main-footer__iframe-image--no-js {
+  z-index: 1;
 }
 
 .main-footer__content-wrapper {

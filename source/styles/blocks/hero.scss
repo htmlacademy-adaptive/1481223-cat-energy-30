@@ -32,6 +32,10 @@
   }
 }
 
+.hero__image {
+  display: block;
+}
+
 .hero__container {
   display: flex;
   flex-direction: column;
@@ -47,7 +51,7 @@
 
   @include media-desctop {
     padding-top: 29px;
-    min-height: 549px;
+    min-height: 551px;
     padding-bottom: 82px;
   }
 }
@@ -67,7 +71,7 @@
   }
 
   @include media-desctop {
-    margin-top: 90px;
+    margin-top: 82px; /*90px*/
     margin-bottom: 40px;
     margin-right: 0;
     margin-left: 80px;
@@ -111,8 +115,12 @@
   }
 
   @include media-desctop {
-    margin-top: -370px;
-    margin-left: 447px;
+    //margin-top: -370px;
+    //margin-left: 447px;
+    position: absolute;
+    top: 30px;
+    left: 557px;
+    margin: 0;
   }
 }
 
@@ -128,7 +136,12 @@
     margin-left: 90px;
     margin-top: 0;
     width: 244px;
+    height: 54px;
     order: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   @include media-desctop {

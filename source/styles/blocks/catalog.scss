@@ -6,13 +6,18 @@
   }
 }
 
-.catalog .catalog__container {
+.catalog__container {
   padding-top: 27px;
-  padding-bottom: 26px;
+  padding-bottom: 25px;
 
   @include media-tablet {
     padding-top: 65px;
     padding-bottom: 70px;
+  }
+
+  @include media-desctop {
+    padding-top: 74px;
+    padding-bottom: 76px;
   }
 }
 
@@ -24,14 +29,17 @@
   &::after {
     content: " ";
     position: absolute;
+    left: 50%;
     bottom: 0;
-    left: -20px;
-    right: -20px;
     height: 1px;
-    background-color: $special-grey2;
+    background-color: $footer-border-gray;
+    width: 100vw;
+    transform: translateX(-50vw);
 
     @include media-tablet {
       display: none;
+      width: auto;
+      transform: none;
     }
   }
 
@@ -43,6 +51,7 @@
 
 .catalog__item--show-more {
   text-align: center;
+  position: relative;
 
   @include media-tablet {
     padding-top: 132px;
@@ -74,11 +83,12 @@
   &::after {
     content: " ";
     position: absolute;
+    left: 50%;
     bottom: 0;
-    left: -20px;
-    right: -20px;
     height: 1px;
-    background-color: $special-grey2;
+    background-color: $footer-border-gray;
+    width: 100vw;
+    transform: translateX(-50vw);
 
     @include media-tablet {
       display: none;
@@ -103,17 +113,18 @@
 
   @include media-desctop {
     grid-template-columns: 245px 245px 245px 245px;
-    gap: 80px;
+    gap: 63px 80px;
   }
 }
 
 .catalog__show-more {
-  margin-top: 23px;
+  margin-top: 20px; /*23px*/
   margin-bottom: 8px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   color: $light-black-color;
+  text-transform: uppercase;
 
   @include media-tablet {
     font-size: 20px;
@@ -124,6 +135,10 @@
     margin-top: 50px;
     margin-bottom: 23px;
     z-index: 2;
+  }
+
+  @include media-desctop {
+    margin: 42px auto 26px;
   }
 }
 
@@ -145,6 +160,7 @@
 .catalog__item--show-more::before {
   content: " ";
   display: inline-block;
+  margin-top: 5px;
   width: 30px;
   height: 30px;
   background-image: url("../../images/icons/stack.svg#plus");

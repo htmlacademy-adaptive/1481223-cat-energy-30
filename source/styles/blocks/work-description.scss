@@ -1,6 +1,6 @@
 .work-description__container {
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 49px;
 
   @include media-tablet {
     padding-top: 45px;
@@ -10,6 +10,7 @@
 
   @include media-desctop {
     border-bottom: none;
+    padding-top: 71px;
     padding-bottom: 0;
   }
 }
@@ -30,7 +31,7 @@
   }
 
   @include media-desctop {
-    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-columns: 250px 246px 248px 250px;
     gap: 37px 77px;
   }
 }
@@ -158,6 +159,8 @@
   margin-left: 20px;
   margin-top: 0;
   margin-bottom: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 
   @include media-tablet {
     position: relative;
@@ -165,5 +168,13 @@
     margin-top: 31px;
     margin-left: 0;
     z-index: 2;
+  }
+}
+
+.work-description__br {
+  display: none;
+
+  @include media-tablet {
+    display: block;
   }
 }

@@ -52,8 +52,9 @@
     line-height: 24px;
   }
 
-  @include media-tablet {
+  @include media-desctop {
     margin-bottom: 69px;
+    width: 434px;
   }
 }
 
@@ -79,14 +80,20 @@
 
   @include media-desctop {
     width: auto;
-    margin-top: 55px;
+    margin-top: 47px;/*55px*/
     margin-bottom: 75px;
     text-align: left;
   }
 }
 
 .live-example__cost-text {
+  @include media-tablet {
+    display: block;
+    margin-bottom: 9px;
+  }
+
   @include media-desctop {
+    display: inline;
     margin-right: 63px;
   }
 }
@@ -130,7 +137,7 @@
     width: 560px;
     height: 512px;
     margin: 0 auto;
-    margin-top: 99px;
+    margin-top: 88px;
   }
 
   @include media-desctop {
@@ -160,14 +167,48 @@
   top: 0;
   height: 256px;
   width: 40px;
-  background-image: url("../../images/drag-divider.svg");
   background-repeat: no-repeat;
   z-index: 3;
+  color: $social-icon-color;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary-green;
+  }
+
+  &:hover::before {
+    background-color: $primary-green;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 18px;
+    width: 4px;
+    border-radius: 2px;
+    background-color: $social-icon-color;
+    z-index: -1;
+  }
 
   @include media-tablet {
     height: 512px;
-    background-image: url("../../images/drag-devider-medium.svg");
   }
+}
+
+.live-example__image-compare-divider-button {
+  position: absolute;
+  top: calc(50% - 20px);
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+  cursor: pointer;
 }
 
 .live-example__intro {

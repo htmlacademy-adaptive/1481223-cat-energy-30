@@ -9,6 +9,8 @@
     grid-template-areas: "image" "text" "button";
     padding-top: 10px;
     padding-bottom: 40px;
+    box-sizing: border-box;
+    min-height: 511px;
 
     &::before {
       content: " ";
@@ -32,6 +34,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 107px;
 
   @include media-tablet {
     margin: 0 auto;
@@ -43,6 +46,10 @@
   @include media-desctop {
     width: 169px;
   }
+}
+
+.catalog-card-item__image {
+  display: block;
 }
 
 .catalog-card-item__description {
@@ -72,7 +79,7 @@
 .catalog-card-item__title {
   margin-top: 0;
   margin-bottom: 14px;
-  width: 76px;
+  width: 77px;
 
   @include media-tablet {
     margin-top: 22px;
@@ -80,6 +87,11 @@
     text-align: center;
     width: auto;
     z-index: 2;
+  }
+
+  @include media-desctop {
+    margin-top: 12px;
+    margin-bottom: 23px;
   }
 }
 
@@ -97,11 +109,20 @@
     margin-left: 37px;
     margin-right: 37px;
     z-index: 2;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @include media-desctop {
     margin-left: 38px;
     margin-right: 38px;
+    padding-bottom: 7px;
+
+    &:last-child {
+      padding-bottom: 9px;
+    }
   }
 }
 
