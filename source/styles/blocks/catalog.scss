@@ -136,6 +136,10 @@
     margin-bottom: 23px;
     z-index: 2;
   }
+
+  @include media-desctop {
+    margin: 42px auto 26px;
+  }
 }
 
 .catalog__show-more-slogan {

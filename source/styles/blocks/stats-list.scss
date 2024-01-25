@@ -38,7 +38,7 @@
 
 .stats-list__description {
   position: relative;
-  bottom: 9px;
+  bottom: 12px;
   padding: 0 12px;
   width: 77px;
   font-weight: 400;
@@ -49,6 +49,7 @@
   background-color: $live-example-background;
 
   @include media-tablet {
+    bottom: 9px;
     background-color: $light-color;
     font-size: 14px;
     line-height: 14px;
@@ -56,6 +57,7 @@
   }
 
   @include media-desctop {
+    bottom: 7px;
     background-color: $live-example-background;
   }
 }

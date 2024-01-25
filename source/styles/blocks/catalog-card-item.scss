@@ -118,6 +118,11 @@
   @include media-desctop {
     margin-left: 38px;
     margin-right: 38px;
+    padding-bottom: 7px;
+
+    &:last-child {
+      padding-bottom: 9px;
+    }
   }
 }
 

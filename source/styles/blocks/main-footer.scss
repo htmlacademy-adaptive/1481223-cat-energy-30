@@ -14,6 +14,8 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $light-black-color;
+  margin-block-start: 0;
+  margin-block-end: 0;
 
   @include media-tablet {
     font-size: 20px;
@@ -197,7 +199,7 @@
 }
 
 .main-footer__text-wrapper {
-  padding: 28px 0 26px;
+  padding: 26px 0 26px;
   background-color: $light-gray-color;
 
   @include media-tablet {
@@ -207,7 +209,7 @@
   @include media-desctop {
     position: absolute;
     top: 95px;
-    left: 17%;
+    left: 110px;
     padding-left: 80px;
     padding-right: 78px;
     background-color: $light-color;
