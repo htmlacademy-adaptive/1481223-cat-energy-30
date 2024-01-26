@@ -114,6 +114,18 @@
   }
 }
 
+.pet-programm__pet-owner-wrapper {
+  margin-top: 26px;
+
+  @include media-tablet {
+    margin-top: 65px;
+  }
+
+  @include media-desctop {
+    margin-top: 70px;
+  }
+}
+
 .pet-programm__input-name,
 .pet-programm__markup-text,
 .pet-programm__input,
@@ -498,7 +510,7 @@
 }
 
 .pet-programm__pet-owner-wrapper .pet-programm__legend {
-  padding-top: 26px;
+  //padding-top: 26px;
   margin-bottom: 35px;
   max-width: 187px;
 
@@ -512,21 +524,25 @@
     }
   }*/
 
+  &::before {
+    top: calc(50% - 10px);
+  }
+
   @include media-tablet {
-    padding-top: 65px;
+    //padding-top: 65px;
     margin-bottom: 76px;
     max-width: unset;
 
     &::before {
-      top: calc(50% + 37px);
+      top: calc(50% + 4px);
     }
   }
 
   @include media-desctop {
-    padding-top: 70px;
+    //padding-top: 70px;
 
     &::before {
-      top: calc(50% + 39px);
+      top: calc(50% + 6px);
     }
   }
 }
