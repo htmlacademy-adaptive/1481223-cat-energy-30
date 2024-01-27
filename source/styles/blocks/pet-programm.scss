@@ -585,6 +585,11 @@
   }
 }
 
+.custom-toogle[type="radio"]:focus ~ .pet-programm__markup,
+.custom-toogle[type="checkbox"]:focus ~ .pet-programm__markup {
+  outline: 1px solid $primary-green;
+}
+
 .custom-toogle[type="radio"]:checked ~ .pet-programm__markup {
   background-image: url("../../images/icons/stack.svg#radiobutton-active");
   background-size: 13px 13px;

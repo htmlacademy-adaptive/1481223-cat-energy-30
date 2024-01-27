@@ -177,6 +177,10 @@
   opacity: 0.3;
 }
 
+.main-footer__social-link:focus {
+  background-color: $primary-green;
+}
+
 .main-footer__map-wrapper {
   width: 100%;
   position: relative;
