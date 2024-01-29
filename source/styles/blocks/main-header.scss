@@ -11,10 +11,10 @@
       background:
         linear-gradient(rgba(94, 170, 47, 0.85) 62.4%, rgba(104, 183, 56, 0.85)),
         image-set(
-          url("../../images/hero-cat-big@1x.webp") type("image/webp") 1x,
-          url("../../images/hero-cat-big@2x.webp") type("image/webp") 2x,
-          url("../../images/hero-cat-big@1x.jpg") type("image/jpg") 1x,
-          url("../../images/hero-cat-big@2x.jpg") type("image/jpg") 2x
+          url("../../images/hero-cat-big-cuted@1x.webp") type("image/webp") 1x,
+          url("../../images/hero-cat-big-cuted@2x.webp") type("image/webp") 2x,
+          url("../../images/hero-cat-big-cuted@1x.jpg") type("image/jpg") 1x,
+          url("../../images/hero-cat-big-cuted@2x.jpg") type("image/jpg") 2x
         ),
         linear-gradient(rgba(65, 64, 69, 1), rgba(65, 64, 69, 1));
       background-repeat: no-repeat;
@@ -94,7 +94,6 @@
         width: calc(100% + 40px);
         position: relative;
         left: -20px;
-        //border-bottom: 1px solid $work-description-border;
       }
 
       .navigation-list__item::before {

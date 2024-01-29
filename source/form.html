@@ -8,6 +8,8 @@
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
@@ -149,8 +151,8 @@
             <source media="(min-width: 768px)" type="image/webp" srcset="images/map-medium@1x.webp 1x, images/map-medium@2x.webp 2x" height="400" width="768">
             <source media="(min-width: 768px)" type="image/png" srcset="images/map-medium@1x.png 1x, images/map-medium@2x.png 2x" height="400" width="768">
             <source type="image/webp" srcset="images/map@1x.webp 1x, images/map@2x.webp 2x" height="362" width="320">
-            <img src="images/map@1x.png" class="main-footer__iframe-image main-footer__iframe-image--no-js" srcset="images/map@1x.png 1x,
-            images/map@2x.png 2x" height="362" width="320">
+            <img class="main-footer__iframe-image main-footer__iframe-image--no-js" src="images/map@1x.png" srcset="images/map@1x.png 1x,
+            images/map@2x.png 2x" loading="lazy" height="362" width="320" alt="Карта">
           </picture>
           <iframe class="main-footer__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bcbdd1e43705df5175867bc851a8bea1567a8a1c5d960b0e6033b16215a73a1&amp;source=constructor" width="320" height="362"></iframe>
         </div>

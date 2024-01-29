@@ -8,6 +8,8 @@
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
@@ -136,7 +138,7 @@
                 <source media="(min-width: 768px)" type="image/png" srcset="images/cat-fat-medium@1x.png 1x, images/cat-fat-medium@2x.png 2x" width="560" height="512">
                 <source type="image/webp" srcset="images/cat-fat-small@1x.webp 1x, images/cat-fat-small@2x.webp 2x" width="280" height="256">
                 <img src="images/cat-fat-small@1x.png" srcset="images/cat-fat-small@1x.png 1x,
-                images/cat-fat-small@2x.png 2x" width="280" height="256" alt="Большой кот.">
+                images/cat-fat-small@2x.png 2x" loading="lazy" width="280" height="256" alt="Большой кот.">
               </picture>
             </div>
             <div class="live-example__image-compare-divider">
@@ -156,7 +158,7 @@
                 <source media="(min-width: 768px)" type="image/png" srcset="images/cat-slim-medium@1x.png 1x, images/cat-slim-medium@2x.png 2x" width="560" height="512">
                 <source type="image/webp" srcset="images/cat-slim-small@1x.webp 1x, images/cat-slim-small@2x.webp 2x" width="280" height="256">
                 <img class="live-example__second-compare-image" src="images/cat-slim-small@1x.png" srcset="images/cat-slim-small@1x.png 1x,
-                images/cat-slim-small@2x.png 2x" width="280" height="256" alt="Худой кот.">
+                images/cat-slim-small@2x.png 2x" loading="lazy" width="280" height="256" alt="Худой кот.">
               </picture>
             </div>
           </div>
@@ -178,8 +180,8 @@
             <source media="(min-width: 768px)" type="image/webp" srcset="images/map-medium@1x.webp 1x, images/map-medium@2x.webp 2x" height="400" width="768">
             <source media="(min-width: 768px)" type="image/png" srcset="images/map-medium@1x.png 1x, images/map-medium@2x.png 2x" height="400" width="768">
             <source type="image/webp" srcset="images/map@1x.webp 1x, images/map@2x.webp 2x" height="362" width="320">
-            <img src="images/map@1x.png" class="main-footer__iframe-image main-footer__iframe-image--no-js" srcset="images/map@1x.png 1x,
-            images/map@2x.png 2x" height="362" width="320">
+            <img class="main-footer__iframe-image main-footer__iframe-image--no-js" src="images/map@1x.png" srcset="images/map@1x.png 1x,
+            images/map@2x.png 2x" loading="lazy" height="362" width="320" alt="Карта">
           </picture>
           <iframe class="main-footer__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5bcbdd1e43705df5175867bc851a8bea1567a8a1c5d960b0e6033b16215a73a1&amp;source=constructor" width="320" height="362"></iframe>
         </div>
