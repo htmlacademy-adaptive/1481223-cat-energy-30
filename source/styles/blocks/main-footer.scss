@@ -94,7 +94,8 @@
   color: $social-icon-color;
   pointer-events: none;
 
-  &:hover::after {
+  &:hover::after,
+  &:focus::after {
     background-color: $primary-green;
   }
 
