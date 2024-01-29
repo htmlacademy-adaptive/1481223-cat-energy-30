@@ -235,11 +235,11 @@
   border-bottom: 1px solid $footer-border-gray;
   color: $light-black-color;
 
-  &:hover {
+  &[href]:hover {
     color: $logo-footer-focus-color;
   }
 
-  &:active {
+  &[href]:active {
     color: $logo-footer-active;
   }
 
