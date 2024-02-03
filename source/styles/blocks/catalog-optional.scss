@@ -162,6 +162,8 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-image:
     image-set(
       url("../../images/action-cat-small@1x.webp") type("image/webp") 1x,
@@ -170,26 +172,27 @@
       url("../../images/action-cat-small@2x.jpg") type("image/jpg") 2x
     );
   background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $primary-green-transparent;
   min-height: 290px;
   width: 280px;
+  box-sizing: border-box;
 
   &::before {
     content: " ";
     position: absolute;
     top: 0;
     left: 0;
-    min-height: 290px;
+    bottom: 0;
     width: 280px;
     background-color: $primary-green-transparent;
 
     @include media-tablet {
       width: 707px;
-      min-height: 200px;
     }
 
     @include media-desctop {
       width: 245px;
-      min-height: 288px;
     }
   }
 
