@@ -184,18 +184,15 @@
     top: 0;
     left: 0;
     bottom: 0;
-    //min-height: 290px;
     width: 280px;
     background-color: $primary-green-transparent;
 
     @include media-tablet {
       width: 707px;
-      //min-height: 200px;
     }
 
     @include media-desctop {
       width: 245px;
-      //min-height: 288px;
     }
   }
 
